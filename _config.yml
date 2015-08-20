@@ -10,11 +10,11 @@ paginate_path: /blog/page:num #makes pagination working
 #contacts
 git: "https://github.com/psuong"  #Add your github url here.
 stackoverflow: #Add your stackoverflow url here.
-twitter: #Add your twitter url here.
+twitter: "https://twitter.com/PorrithSuong"   #Add your twitter url here.
 
 #disqus comment
-disqus:
-    shortname: "test" #replace with your disqus comment short name
+#disqus:
+    #shortname: "test" #replace with your disqus comment short name
 
 #google analytics
 google:
