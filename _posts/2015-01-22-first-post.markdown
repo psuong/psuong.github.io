@@ -28,4 +28,4 @@ find a way to efficiently crack the password.
 #### What's to come?
 I will continuously update my portfolio with projects and images of renders I work on
 in Blender.
-[For more works I've contributed to, please check UGF Studio.](https://www.ugfstudio.com "Other works")
+[For more works I've contributed to, please check UGF Studio.](http://www.ugfstudio.com)
