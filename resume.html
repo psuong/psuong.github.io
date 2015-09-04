@@ -3,18 +3,11 @@ title: resume
 permalink: "resume/index.html"
 layout: default
 ---
-<head>
-  <script type = "text/javascript">
-    window.onload = function() {
-      var myPDF = new PDFObject({url: "/documents/Resume_Porrith.Suong.pdf"}).embed("pdf");      
-    }
-    </script>
-</head>
-
-
 <div class="resume row">
-  <object data="/documents/Resume_PorrithSuong.pdf#" type="application/pdf" width="=100%" height="100%"></object>
   <body>
+    <object data="/documents/Resume_PorrithSuong.pdf" type="application/pdf" width="100%" height="500px">
+      <embed src="/documents/Resume_PorrithSuong.pdf" type="application/pdf" width="100%" height="500px"/>
+    </object>
     <p>
       If the above PDF viewer does not work, you can download a copy of my resume <a href="/documents/Resume_Porrith Suong.pdf" target="_blank"> here.</a>
     </p>
