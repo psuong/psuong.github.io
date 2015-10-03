@@ -25,7 +25,7 @@ Do things one at a time, there's no point in multitasking if the work that comes
 There's something called *opportunity costs* and people generally don't think about it all the time. With the semester rolling in, it's easy to say, "I won't have time because of X class." To put that into perspective, there will be x number of people who will drop out of a project. Some for legitimate reasons, some due to time management issues, etc. A project outside of class is something to put on your resume and provides experiences not taught in class. A class teaches students skills focused around a particular subject. Both can be seen as equally important, but I'll say this straight, grades aren't the **most super important factor**. If you're not using what you learned in class, the class would be considered useless useless.
 
 ### General Tips ###
-So on ACM, especially for gamedev, I made a Slack account and invited partipants into the team. Utilize that often, since that's a community that can provide help. There are certain channels like #general, where you can ask for help about anything. ***Of course, don't spam.*** The Facebook group is also a means of resource. ***Again, don't spam.*** Use that if you're not on our Slack team.
+So on ACM, especially for gamedev, I made a Slack account and invited partipants into the team. Utilize that often, since that's a community that can provide help. There are certain channels like #general, where you can ask for help about anything. ***Of course, don't spam.*** The Facebook group is also a means of resource. ***Again, don't spam.*** Use that if you're not on our Slack team. 
 
 ### How do I do it? ###
 Really, what's up there. Nothing really special about this section.
