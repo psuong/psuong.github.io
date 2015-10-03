@@ -8,7 +8,7 @@
     <pubDate>Sat, 03 Oct 2015 18:59:02 -0400</pubDate>
     <lastBuildDate>Sat, 03 Oct 2015 18:59:02 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-
+    
       <item>
         <title>How to Manage?</title>
         <description>&lt;p&gt;So it’s been a long time since I’ve actually decided to write a blog. I’d say I would keep my portfolio updated
@@ -43,12 +43,12 @@ to be a success X,”&lt;/em&gt;&lt;/strong&gt; but really some things that I’
 &lt;h3 id=&quot;porrith-suong&quot;&gt;Porrith Suong&lt;/h3&gt;
 </description>
         <pubDate>Sat, 03 Oct 2015 00:00:00 -0400</pubDate>
-        <link>psuong.github.io/How%20to%20Manage%3F</link>
-        <guid isPermaLink="true">psuong.github.io/How%20to%20Manage%3F</guid>
-
-
+        <link>psuong.github.io/managing</link>
+        <guid isPermaLink="true">psuong.github.io/managing</guid>
+        
+        
       </item>
-
+    
       <item>
         <title>First Project/Porfolio Launch</title>
         <description>&lt;p&gt;Portfolio launch! On my portfolio I will post projects I am working on and worked on.
@@ -77,9 +77,9 @@ in Blender.
         <pubDate>Thu, 22 Jan 2015 00:00:00 -0500</pubDate>
         <link>psuong.github.io/firstpost</link>
         <guid isPermaLink="true">psuong.github.io/firstpost</guid>
-
-
+        
+        
       </item>
-
+    
   </channel>
 </rss>
