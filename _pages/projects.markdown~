@@ -22,8 +22,4 @@ You can view the Android and Windows Phone App [here](https://play.google.com/st
 
 A Knight in the Park was a quirky 3D survival shooter game, where the player has to defend himself or herself from medieval knights who relentlessy attack you. However, planned "glitches" may occur simultaneously forcing the player to change the way s/he plays.
 
-You can try it out on the web [here](http://www.kongregate.com/games/UGFStudio/a-knight-in-the-park). Unfortunately, since many browsers have stopped plugin support for Unity Web player, you can only try it on Mozilla Firefox or Opera.
-
-### Battle Blocks Royale 
-
-Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here]().
+You can try it out on the web [here](http://www.kongregate.com/games/UGFStudio/a-knight-in-the-park). Unfortunately, since many browsers have stopped plugin support for Unity Web player, you can only try it on Mozilla Firefox.
