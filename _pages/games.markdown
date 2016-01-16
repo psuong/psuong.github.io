@@ -1,10 +1,19 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Games
+permalink: /games/
 ---
 
 ## Games
+
+### Modern Knights
+Modern Knights is currently my latest project I'm working on through UGF Studio. Essentially the game is a sequel to A Knight in the Park, however this project is much more grand. This project marks the first integration of a custom AI Framework my team and I plan to release on the Unity Asset Store.
+
+You can view the full project description [here]().
+
+### Battle Blocks Royale 
+
+Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here](/projects/battle-blocks-royale).
 
 ### Debugit
 
@@ -24,6 +33,3 @@ A Knight in the Park was a quirky 3D survival shooter game, where the player has
 
 You can try it out on the web [here](http://www.kongregate.com/games/UGFStudio/a-knight-in-the-park). Unfortunately, since many browsers have stopped plugin support for Unity Web player, you can only try it on Mozilla Firefox or Opera.
 
-### Battle Blocks Royale 
-
-Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here]().
