@@ -9,7 +9,7 @@ permalink: /games/
 ### Modern Knights
 Modern Knights is currently my latest project I'm working on through UGF Studio. Essentially the game is a sequel to A Knight in the Park, however this project is much more grand. This project marks the first integration of a custom AI Framework my team and I plan to release on the Unity Asset Store.
 
-You can view the full project description [here]().
+You can view the full project description [here](/games/modern-knights).
 
 ### Battle Blocks Royale 
 
