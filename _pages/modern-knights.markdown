@@ -27,4 +27,4 @@ Each Action Phase begins with the player and the enemy only owning one base. Eac
 
 Well, aside from merging two different kinds of gameplays and styles together, this game is rather AI heavy. The medieval knights are clearly outgunned (swords and bows vs modern guns), so in order to compensate they'll need both numbers and tactics. While trees and state machines might work for the game, we wanted something more dynamic that mimics a person who is competent on the battlefield.
 
-So introduce a neural network AI System. Since information is constantly being evaluated rather than doing constant condition checks, pick the task that best fits the situation! 
+So introduce a neural network AI System. Since information is constantly being evaluated rather than doing constant condition checks, pick the task that best fits the situation! So in a way, Modern Knights serves as a public testing ground for our custom AI system.
