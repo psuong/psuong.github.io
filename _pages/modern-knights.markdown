@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Modern Knights
-permalink: /games/modern-knights
+permalink: modern-knights
 ---
 
 ## What is Modern Knights?
