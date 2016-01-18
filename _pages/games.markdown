@@ -9,11 +9,11 @@ permalink: /games/
 ### Modern Knights
 Modern Knights is currently my latest project I'm working on through UGF Studio. Essentially the game is a sequel to A Knight in the Park, however this project is much more grand. This project marks the first integration of a custom AI Framework my team and I plan to release on the Unity Asset Store.
 
-You can view the full project description [here](/games/modern-knights).
+You can view the full project description [here](/games/modern-knights.html).
 
 ### Battle Blocks Royale 
 
-Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here](/projects/battle-blocks-royale).
+Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here](/projects/battle-blocks-royale.html).
 
 ### A Knight in the Park
 
