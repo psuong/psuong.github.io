@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Battle Blocks Royale
-permalink: /games/battle-blocks-royale
+permalink: /games/battle-blocks-royale/
 ---
 
 ## The Game

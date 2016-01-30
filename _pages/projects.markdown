@@ -6,7 +6,7 @@ permalink: /projects/
 
 ## Other Projects Not Related to Games
 
-You can view all of my public projects on my [Github](https://github.com/psuong01) or my [Bitbucket](https://bitbucket.org/psuong01/).
+You can view all of my public projects on my [Github](https://github.com/psuong) or my [Bitbucket](https://bitbucket.org/psuong01/).
 
 ### Break Bread With Friends
 
