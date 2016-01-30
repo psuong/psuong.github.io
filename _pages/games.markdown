@@ -13,7 +13,7 @@ You can view the full project description [here](/games/modern-knights).
 
 ### Battle Blocks Royale 
 
-Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here](/games/battle-blocks-royale).
+Battle Blocks Royale is the first game I decided to use in order to teach beginners in the ACM club component based programming and C#. You can view the full project description [here](/games/battle-blocks-royale.html).
 
 ### A Knight in the Park
 
