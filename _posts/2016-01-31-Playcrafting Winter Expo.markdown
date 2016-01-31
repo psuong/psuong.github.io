@@ -21,7 +21,7 @@ Well, being one of the only few programmers, it was difficult to get all that co
 
 List of things that could've been different:
 
-* Use [Trello](trello.com) much more effectively! If half the team is effectively using it, then it's not being effectively used.
+* Use [Trello](http://www.trello.com) much more effectively! If half the team is effectively using it, then it's not being effectively used.
 * Communication is key, but also is asking good questions. Since the team has to work asynchronously, questions such as, "Is this good enough?" or "What do you think?" aren't good questions because I'm not sure what the point of the question is.
 * Difference in skill level is okay! No one needs to be the greatest at what s/he does, but rather just be able to learn how to do something and not be under pressure that s/he isn't getting it. That's the point of learning at your own pace and utilizing your skills on a team.
 
@@ -33,4 +33,8 @@ I'll be at the [NYU Game Center](http://gamecenter.nyu.edu/events/playtest-thurs
 
 ## Screenshots!
 
+<img id="screenshots" src="/images/Junkyard.png" alt="Picture of a Junkyard.">
 
+<img id="screenshots" src="/images/Alleyway.png" alt="Picture a an alleyway.">
+
+<img id="screenshots" src="/images/ParkingLot.png" alt="Picture of a parking lot.">
