@@ -5,7 +5,7 @@ title: Playcrafting Winter Expo
 
 ## End of the Winter Break
 
-The end of the winter break marks my deadline for my MVP for Modern Knights. Now the question is, "Was the MVP met within 1 month?" The answer is yes and no. Yes the MVP was met and I was able to showcase it at Playcrafting NYC Winter Expo, but I only got to showcase it at the later half of the expo. So for the first half or two third of the expo
+The end of the winter break marks my deadline for my MVP for Modern Knights. Now the question is, "Was the MVP met within 1 month?" The answer is yes and no. Yes the MVP was met and I was able to showcase it at Playcrafting NYC Winter Expo, but I only got to showcase it at the later half of the expo. So for the first half or two thirds of the expo, a previous stable build of the game was shown.
 
 ## The Game's Reception
 
