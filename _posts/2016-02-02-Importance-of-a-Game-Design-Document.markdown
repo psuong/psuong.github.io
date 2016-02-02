@@ -30,3 +30,5 @@ Plus if there's contract work involved, the less time you spend going back and f
 * Use examples in your GDD, but don't overuse it. Examples from other games are good to use because if other people on your team knows about the example game, then the game is a tad bit easier for the team to understand. Don't overuse another example, because your game will become a clone of your example game (at least the idea will be).
 
 * Pictures are worth a thousand words. I really don't like that idiom, but sometimes it's true. Through concept art or even low fidelity wireframes, people can understand the feeling and flow the content is trying to create.
+
+So with that in mind, happy game developing!
