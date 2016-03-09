@@ -1,9 +1,8 @@
 <nav class="c-navigation {% if site.fixedNav == 'true' %}is-fixed{% endif %}">
   <div class="c-navigation__container u-container">
     <a class="c-navigation__item {% if page.url == '' %}is-active{% endif %}" href="{{ "/" | prepend: site.baseurl }}">Home</a>
-    <a class="c-navigation__item {% if page.url == '/articles/' %}is-active{% endif %}" href="{{ "/articles/" | prepend: site.baseurl }}">Blog</a>
+    <a class="c-navigation__item {% if page.url == '/articles/' %}is-active{% endif %}" href="{{ "/blog/" | prepend: site.baseurl }}">Blog</a>
     <a class="c-navigation__item {% if page.url == '/games/' %}is-active{% endif %}" href="{{ "/games/" | prepend: site.baseurl }}">Games</a>
     <a class="c-navigation__item {% if page.url == '/projects/' %}is-active{% endif %}" href="{{ "/projects/" | prepend: site.baseurl }}">Projects</a>
-    <a class= "c-navigation__item" href="/documents/Resume_PorrithSuong.pdf">Resume</a>
   </div>
 </nav>
