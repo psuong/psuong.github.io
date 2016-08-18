@@ -6,8 +6,18 @@ permalink: /games/
 
 ## Games
 
+### Kitty in the Box 2
+Kitty in the Box 2 is a mobile game for iOS, Android, and Windows Phone where it's your job to help Sushi train and master the art of leaping into boxes!
+Landing page can be found [here](http://kittyinthebox.com).
+
+### Viacom Dora
+Viacom Dora is a point and click scavenger game designed for kids at Hack Binghamton. After collecting the items, kids would be brought over to a page, where they can
+record themselves pronounce Spanish words and listen to the correct pronunciation of the word. 
+This game won second place in the the "Best Media Hack" category of the hackathon and can be found [here](https://github.com/psuong/viacom-dora).
+
 ### Modern Knights
-Modern Knights is currently my latest project I'm working on through UGF Studio. Essentially the game is a sequel to A Knight in the Park, however this project is much more grand. This project marks the first integration of a custom AI Framework my team and I plan to release on the Unity Asset Store.
+Modern Knights is currently my latest project I'm working on through initialPrefabs. It is a civilian stealth survival game with elements of puzzle. Escape the city, but be careful...
+every life counts!
 
 You can view the full project description [here](/games/modern-knights/).
 
