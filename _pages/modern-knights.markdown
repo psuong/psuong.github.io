@@ -21,5 +21,3 @@ I also want to implement a form of "evolutionary AI" where these knights will le
 As such, I modelled these knights' behaviours to be similar to a pack of wolves with "surrounding" and waiting to attack. Their spatial awareness of each other still needs some work
 since they have some trouble attacking the player, and they attack at different intervals. This is to make the player feel like they're in a pinch as they're trying to defeat the
 knights while being surrounded by only a few versus many.
-
-
