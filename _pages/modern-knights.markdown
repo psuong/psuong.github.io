@@ -6,25 +6,20 @@ permalink: /games/modern-knights/
 
 ## What is Modern Knights?
 
-Modern Knights is a strategy/FPS single player game, where the goal of the player is to liberate a city from medieval knights. The inspiration grew from the "prequel" to the game, A Knight in the Park, but instead of having a simple survival game, my team and I wanted to expand the gameplay and test a plugin we were developing on the sidelines.
+> Modern Knights is a third person civilian stealth game, where medieval knights are the ruling factor. Escape the city...but be careful, every life counts!
 
-## Game Phases
+Originally, it was known as A Knight in the Park, my first Unity project that I worked on 2 years ago found over [here](http://www.kongregate.com/games/ugfstudio/a-knight-in-the-park). The concept
+was a silly concept, with knights magically invading the present times with gameplay akin to a simple "zombie survival" game.
 
-The gameplay is essentially split between two phases, I'll dub them as "Planning Phase" and "Action Phase." 
+The direction is now a stealth game with elements of puzzle. Each decision you make counts, whether it's obvious such as going loud or something minute such as fiddling with the environment.
 
-### Planning Phase
+## Enemies
 
-The planning phase is essentially the stage where the player prepares his/her loadout and is able to "upgrade" equipment. 
+The enemies are medieval knights that were built using my own custom AI System known as [DANI AI]. I wanted these knights to be human like and while behaviour trees did their job,
+I also want to implement a form of "evolutionary AI" where these knights will learn over time.
 
-The loadout generally includes a set of ranged weapons (guns) and each weapon has a set of skills. The reason for this is that I wanted to define each weapon to be unique. For example, a revolver is primarily associated with the wild west and in many shows or movies, they're involved in revolver duels (quickdrawing!). Thus one aspect of a revolver is to benefit the player's/weapon's abilities when switching over to use a revolver.
+As such, I modelled these knights' behaviours to be similar to a pack of wolves with "surrounding" and waiting to attack. Their spatial awareness of each other still needs some work
+since they have some trouble attacking the player, and they attack at different intervals. This is to make the player feel like they're in a pinch as they're trying to defeat the
+knights while being surrounded by only a few versus many.
 
-### Action Phase
-The action phase is essentially the phase where the player is drawn into battle. The player controls a first person controller whose goal is to capture a series of bases and connect them together. When a link is formed from the player's main camp to the enemy's main camp then the player wins the stage. If a link is formed from the enemy main camp to the player's main camp, then the player loses the level, as knights have taken over the entire district.
 
-Each Action Phase begins with the player and the enemy only owning one base. Each side rushes to capture and gain as many bases as they can before both factions actually contact each other. As soon as contact is met between both factions, then the enemy's objective is to eliminate the player. If the player dies, then the level is lost.
-
-## Why build this game?
-
-Well, aside from merging two different kinds of gameplays and styles together, this game is rather AI heavy. The medieval knights are clearly outgunned (swords and bows vs modern guns), so in order to compensate they'll need both numbers and tactics. While trees and state machines might work for the game, we wanted something more dynamic that mimics a person who is competent on the battlefield.
-
-So introduce a neural network AI System. Since information is constantly being evaluated rather than doing constant condition checks, pick the task that best fits the situation! So in a way, Modern Knights serves as a public testing ground for our custom AI system.
