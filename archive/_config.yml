@@ -1,0 +1,24 @@
+# Site settings
+title: Porrith Suong
+email: psuong95@gmail.com
+description: >
+    Welcome to my portfolio! This is where I post updates related
+    to whatever work I'm doing. Thanks for visiting! :)
+baseurl: ""
+url: "http://psuong.github.io"
+fixedNav: 'true' # true or false
+theme: green #purple green, blue, orange, purple, grey
+twitterUsername: PorrithSuong
+githubUsername: psuong
+bitbucketUsername: psuong01
+linkedinUsername: porrithsuong
+dribbbleUsername:
+codepenUsername:
+
+# Build settings
+permalink: /:year/:month/:title
+markdown: kramdown
+include: [_pages]
+exclude: [_site, CHANGELOG.md, LICENSE, README.md]
+sass:
+  style: compressed
