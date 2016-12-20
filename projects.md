@@ -7,11 +7,14 @@ subtitle: All of the stuff I've worked
 ## Through initialPrefabs
 Under initialPrefabs, I've worked on DANI AI, the Kitty in the Box franchise, and Emissary in the Squat of Gods. I'll briefly describe them here, our website still needs
 to be update. :)
+
 * DANI AI is a visual artificial intelligence editor for Unity which follows the design principles of an artificial neural network, emulating the thought process of a human
 being! The tool has been simplified to create different which mimic human senses,
 thought processes, and action execution.
+
 * The [Kitty in the Box](http://mokuni.com/press/sheet.php?p=Kitty%20in%20the%20Box%20VR#projects) franchise includes the mobile and VR version where you train your
 your kitty to learn jump in boxes.
+
 * Emissary in the Squat of Gods is an art exhibit modelling a human ecosystem which uses
 DANI AI to run each agent!
 
