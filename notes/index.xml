@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Me on Porrith Suong</title>
-    <link>/</link>
-    <description>Recent content in About Me on Porrith Suong</description>
+    <title>Notes on Porrith Suong</title>
+    <link>/notes/</link>
+    <description>Recent content in Notes on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       <guid>/notes/vector-math/</guid>
       <description>While building games, here are a series of math functions which I found incredibly useful. For the below content to be relevant to Unity, you can find the git submodule below:
  Math-Utils  Table of Contents  Vectors  Basics of Position &amp;amp; Direction More Fun Things With Direction  Direction Relative Of    Vectors Vectors represent any object which has a magnitude and a position. Consider the cartesian coordinate system on a 3D plane which is usually denoted by like the following (x, y, z).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/_footer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/_footer/</guid>
-      <description></description>
     </item>
     
   </channel>
