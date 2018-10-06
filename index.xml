@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Derby</title>
+      <link>/games/derby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/games/derby/</guid>
+      <description>Derby is an arcade demolition derby racing game. You can either win by racing legitimately or by destroying every other vehicle. Each vehicle has its own custom physics defined, meaning some vehicles will have much better handling than others. Win a race legitimately or waste other vehicles by running into them and win by default!
+Derby is still in early development and uses Unity&amp;rsquo;s preview of the Entity Component System, so stay tuned for more details!</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
