@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>infrastructure on Porrith Suong</title>
+    <link>/categories/infrastructure/</link>
+    <description>Recent content in infrastructure on Porrith Suong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scaffolding in Development</title>
+      <link>/blog/low-level-apis/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/low-level-apis/</guid>
+      <description>So I preferrably enjoy working with low level APIs instead of high level APIs. The main reason behind that is the amount of control I have as a developer, especially on creating the functionality I need. So if there is an alternative API which provides a lower level solution than a high level API which does exactly what I need&amp;hellip;
+I would still go for the lower level solution, even if I have to recreate the same functionality as the high level API.</description>
+    </item>
+    
+  </channel>
+</rss>
