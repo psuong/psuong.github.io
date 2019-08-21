@@ -11,7 +11,7 @@
 <meta property='og:site_name' content='Porrith Suong'>
 <meta property='og:type' content='article'><meta property='article:section' content='page'><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.55.0" />
+<meta name="generator" content="Hugo 0.57.2" />
 
   <title>Projects • Porrith Suong</title>
   <link rel='canonical' href='/projects/'>
@@ -63,6 +63,7 @@
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
     <div class='container'>
       <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
   <a href='/blog/'>Blog</a></li><li class='item'>
   <a href='/about/'>About</a></li><li class='item current'>
   <a aria-current='page' href='/projects/'>Projects</a></li></ul>
@@ -77,6 +78,8 @@
   <div class='container list-container'>
   <ul class='list taxonomy-cloud'><li>
         <a href='/tags/apis/' style='font-size:1em'>apis</a>
+      </li><li>
+        <a href='/tags/planning/' style='font-size:1em'>planning</a>
       </li></ul>
 </div>
 
@@ -108,6 +111,8 @@
 </span>
 </button>
     <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
         <a href='/blog/'>Blog</a>
       </li><li class='item'>
         <a href='/about/'>About</a>
@@ -157,9 +162,22 @@
   <div class='container entry-content'>
   
 
-<h2 id="published-projects">Published Projects</h2>
+<p>So, I&rsquo;ve worked on a number of projects over the years and I definitely need to spruce out this page or split it up
+in the future, but here are a few projects which meant the most to me:</p>
 
-<h3 id="dani-ai">Dani AI</h3>
+<h2 id="reactive-disposal">Reactive Disposal</h2>
+
+<p>Reactive Disposal is a small micro framework to help manage unmanaged memory. Even though I work in C#, I often use a
+lot of unmanaged/unsafe memory, meaning I have to release every single one of them. To help me manage that, I made a
+small reactive framework which releases unmanaged memory when an entity is considered &ldquo;destroyed&rdquo;.</p>
+
+<p><strong><em>This is still very much a WIP so expect updates over the coming months!</em></strong></p>
+
+<ul>
+<li><a href="https://github.com/InitialPrefabs/ReactiveDisposal" target="_blank">Github</a></li>
+</ul>
+
+<h2 id="dani-ai">Dani AI</h2>
 
 <p>Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI
 follows a neural network like schema and attempts to treat each agent as an organism with senses that update in
@@ -168,9 +186,11 @@ realtime.</p>
 <p>Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series
 of authored actions from the user. Dani AI is currently used in Ian Cheng&rsquo;s Emissary in the Squat of Gods art exhibit!</p>
 
-<p>You can grab it here on the <a href="https://assetstore.unity.com/packages/tools/ai/dani-ai-108309" target="_blank">Asset Store</a></p>
+<p>You can grab it here on the <a href="https://assetstore.unity.com/packages/tools/ai/dani-ai-108309" target="_blank">Asset Store</a>.</p>
 
-<h3 id="unity-editor-tool-bag">Unity Editor Tool Bag</h3>
+<p><strong><em>I am deprecating DANI AI as I think Machine Learning can certainly do better than my tool.</em></strong></p>
+
+<h2 id="unity-editor-tool-bag">Unity Editor Tool Bag</h2>
 
 <p>The Unity Editor Tool Bag provides common decorates for Unity&rsquo;s Inspector to visually enhance the visual capabilities.
 These visual capabilities currently provide:</p>
@@ -183,11 +203,6 @@ These visual capabilities currently provide:</p>
 
 <p>The project is open sourced and is actively worked on when I have free time. You can grab it on
 <a href="https://github.com/InitialPrefabs/UnityEditorToolBag" target="_blank">Github</a>!</p>
-
-<h2 id="referencable-projects">Referencable Projects</h2>
-
-<p>Referencable projects are projects which I have pulled out of games I&rsquo;ve worked on. While they have some 3rd party
-dependencies and won&rsquo;t compile without those dependencies, you can certainly view them for learning material.</p>
 
 <h2 id="arcade-vehicle-controller">Arcade Vehicle Controller</h2>
 

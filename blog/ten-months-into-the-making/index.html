@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think videos do more justice at the moment instead of me pitching, so here&rsquo;s the actual gameplay video link:
+ Repurposed Server/Client Gameplay from initialPrefabs on Vimeo.
+Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&rsquo;s 2D challenge.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Ten Months into the Making of Repurposed • Porrith'>
+<meta property='og:description' content='So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think videos do more justice at the moment instead of me pitching, so here&rsquo;s the actual gameplay video link:
+ Repurposed Server/Client Gameplay from initialPrefabs on Vimeo.
+Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&rsquo;s 2D challenge.'>
+<meta property='og:url' content='/blog/ten-months-into-the-making/'>
+<meta property='og:site_name' content='Porrith Suong'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/fc0c6099065595e46a011e442e1a48d8?s=256'><meta property='article:section' content='blog'><meta property='article:tag' content='planning'><meta property='article:published_time' content='2019-08-12T00:00:00Z'/><meta property='article:modified_time' content='2019-08-12T00:00:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.57.2" />
+
+  <title>Ten Months into the Making of Repurposed • Porrith</title>
+  <link rel='canonical' href='/blog/ten-months-into-the-making/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.dd2efce5.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-blog has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/profile.jpg'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Porrith Suong
+    </h2>
+    <div class='desc'>
+    Game Developer, highly interested in low level tech :)
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/blog/'>Blog</a></li><li class='item'>
+  <a href='/about/'>About</a></li><li class='item'>
+  <a href='/projects/'>Projects</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/apis/' style='font-size:1em'>apis</a>
+      </li><li>
+        <a href='/tags/planning/' style='font-size:1em'>planning</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/blog/'>Blog</a>
+      </li><li class='item'>
+        <a href='/about/'>About</a>
+      </li><li class='item'>
+        <a href='/projects/'>Projects</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/blog/'>Blog</a></li><li><span>Ten Months into the Making of Repurposed</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Porrith Suong</p><p class='desc site-desc'>Game Developer, highly interested in low level tech :)</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Ten Months into the Making of Repurposed</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2019-08-12T00:00:00Z'>2019, Aug 12</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/porrithsuong'>Porrith</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+6 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<p>So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think
+videos do more justice at the moment instead of me pitching, so here&rsquo;s the actual gameplay video link:</p>
+
+<p><iframe src="https://player.vimeo.com/video/347782662" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/347782662">Repurposed Server/Client Gameplay</a> from <a href="https://vimeo.com/user97280022">initialPrefabs</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+<p>Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the
+game, and entered it into Unity&rsquo;s 2D challenge. But, considering we only had 3 months and the game was very quite large
+for the scope of the challenge, I turned the game into a much larger vision.</p>
+
+<p>And well&hellip;right now I am at a very content point of working on the game into a playable MVP and I&rsquo;d love to describe
+the process on what worked in managing a team, a project, and to avoid burnout. Now this is in the context of me
+building the game on my free time while primarily doing consulting/freelance work as my primary day job.</p>
+
+<h1 id="sprints-don-t-work">Sprints Don&rsquo;t Work</h1>
+
+<p>So I&rsquo;m just going to go right off the bat, but for my team sprints did not work. A sprint in a development cycle is
+getting tasks with common goals done within a specified amount of time (most commonly around 2 weeks of development).</p>
+
+<p>So here are a few things that I have noticed about sprints. Sprinting implies we have to move fast, so the naming
+convention can be off putting as it implies that people have to work fast to get tasks done. Of course, we held daily
+&ldquo;scrum&rdquo; to ensure we know where the progress is with said tasks, but even then there was that sort of pressure.</p>
+
+<h1 id="what-worked-instead-of-sprints">What worked instead of sprints?</h1>
+
+<p>Instead, I encouraged the person who did the work to estimate how long it takes for <em>them</em> to do said work. Here&rsquo;s the
+approach that ended up feeling the most comfortable:</p>
+
+<p>We started off with a basic user story:</p>
+
+<pre><code>As &lt;whatever role&gt;, I want &lt;some feature&gt; for &lt;x, y, z reasons&gt;.
+</code></pre>
+
+<p>So for example:</p>
+
+<pre><code>As a game designer, I want minute camera shakes, so that each time I flinch from an attack, the attack feels powerful.
+</code></pre>
+
+<p>Alright so we can list some unknowns/dependencies:</p>
+
+<ul>
+<li>Unknowns
+
+<ul>
+<li>How much should the camera shake?</li>
+<li>What is the threshold of the damage a player can take before the camera shakes?</li>
+</ul></li>
+<li>Dependencies
+
+<ul>
+<li>Camera</li>
+</ul></li>
+</ul>
+
+<p>Now this is a basic user story and pretty much you can get the jist of the idea on what we&rsquo;re supposed to implement and why.
+Now, on a game design approach, this makes sense! And we can likely map this to our code. Now, it&rsquo;s worth mentioning that I
+personally prefer doing a &ldquo;data oriented&rdquo; workflow, where data comes first and is mostly separated from</p>
+
+<p>But let&rsquo;s think about this technically and architecturally. This user story is pretty basic and leaves a lot to the
+imagination. Before anyone starts working on a user story like this, I usually delve into the technical details for a
+few minutes and ask the following questions:</p>
+
+<ol>
+<li>What is the minimum amount of data I need to do x thing?</li>
+<li>Where do I get this data?</li>
+<li>What do I do with this data?</li>
+<li>Where do I put this data?</li>
+</ol>
+
+<p>Decomposing that user story, I can answer like so:</p>
+
+<ol>
+<li>I need the:
+
+<ul>
+<li>a. delta of the health</li>
+<li>b. the minimum threshold for the camera shake</li>
+<li>c. some noise</li>
+<li>d. the position of the camera</li>
+</ul></li>
+<li>I can find the
+
+<ul>
+<li>a. delta of the health on the player entity</li>
+<li>b. the shake threshold component attached to the player</li>
+<li>c. noise by generating the random values on in a <code>Random.Next(...)</code> function</li>
+<li>d. the cardinal position of the camera associated specifically with the camera</li>
+</ul></li>
+<li>I need to check the delta of the health and compare it to the shake threshold on the camera, generate some random
+offset and apply it to the camera&rsquo;s position</li>
+<li>The only data I need to put back is the positional offset on the camera</li>
+</ol>
+
+<p>By doing this, we go over specifically the data we need to touch and we can catch what we&rsquo;re missing while we&rsquo;re
+planning, like</p>
+
+<ul>
+<li>How long does the camera shake?</li>
+</ul>
+
+<p>It allows us as a team to reason about our infrastructure and feature on a technical side and limit the amount of
+surprises we can expect throughout the development process.</p>
+
+<p>Now I&rsquo;m all for iterative and collaborative development, but quite a few people have told me that the way I structure
+this emphasizes a lot on planning early on, which is &ldquo;anti agile.&rdquo; While I can definitely see that</p>
+
+<h1 id="avoiding-burnout">Avoiding Burnout</h1>
+
+<p>Respect the invidiual who is working on some task! However long it takes is however long it takes. Now in an ideal
+scenario that would be gold, but we live in a world of deadlines and making sure we live and get paid.</p>
+
+<p>If a task honestly takes too long, provide your teammate some help. Rubber duckying and whiteboarding it helps out a
+lot. But this is where I personally think it gets interesting.</p>
+
+<p>Imagine this scenario, you&rsquo;ve got a looming deadline in about a month (which is not a lot of time when working part
+time on a project!). Now most indie game developers would go in a period called &ldquo;crunch,&rdquo; which is a mad dash to the
+finish line to get whatever remaining tasks done.</p>
+
+<p>Now this is certainly worth repeating:</p>
+
+<blockquote>
+<p>Crunch is bad!!! By putting your team under crunch, we encourage a culture where crunch is okay and that the short
+term decisions typically end up being the long term ones.</p>
+</blockquote>
+
+<p>What I found that worked with the team was:</p>
+
+<p>If we&rsquo;re definitely running behind, we revisit our backlog and we make <em>hard</em> decisions early. For example, let&rsquo;s say
+we had to overhaul a major piece of infratstructure because it is just too cumbersome to work with, and we expect it
+will take a few weeks to do. We defer a lot of intended features to some future date.</p>
+
+<p>To meet our PlayNYC (August 10th) deadline, we made our feature lockout date, July 23rd and we deferred tasks to as
+late as 2020.</p>
+
+<h1 id="daily-goals">Daily Goals</h1>
+
+<p>So, personally, I always think that exploring and expanding your skills is typically a good idea. I don&rsquo;t think anyone
+should be grounded in just 1 thing, because experiencing other things helps us emphasize with each other!</p>
+
+<p>While it is important to go into your day thinking</p>
+
+<blockquote>
+<p>&ldquo;What can I do which brings the most value for today?&rdquo;</p>
+</blockquote>
+
+<p>It is equally important to consider,</p>
+
+<blockquote>
+<p>&ldquo;Can I explore anything new so I can experiment and add to my toolbag of utilities?&rdquo;</p>
+</blockquote>
+
+<p>We all have to learn something new and no one is a master at everything, that&rsquo;s a given. By ensuring that we let
+ourselves explore, we again can empathize with our team members who is working on a similar topic/issue and help solve
+the problem.</p>
+
+<h1 id="some-last-thoughts">Some Last Thoughts</h1>
+
+<p>So I think that&rsquo;s really it regarding team management on a more humane perspective. I&rsquo;m nowhere near done finishing my
+game and I&rsquo;ve certainly have things to learn about managing a project, but hope this helps and happy game deving!</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/management/'>management</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/planning/'>planning</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/blog/low-level-apis/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Scaffolding in Development</a>
+    </div></div>
+</nav>
+
+
+<section id='comments' class='comments'>
+  <div class='container sep-before'>
+    <div class='comments-area'><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-psuong-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+  </div>
+</section>
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/psuong' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/PorrithSuong' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:psuong95@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/porrithsuong' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2019 Porrith Suong </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.00df04b7.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

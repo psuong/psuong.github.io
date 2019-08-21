@@ -25,8 +25,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/</guid>
-      <description>Published Projects Dani AI Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI follows a neural network like schema and attempts to treat each agent as an organism with senses that update in realtime.
-Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series of authored actions from the user.</description>
+      <description>So, I&amp;rsquo;ve worked on a number of projects over the years and I definitely need to spruce out this page or split it up in the future, but here are a few projects which meant the most to me:
+Reactive Disposal Reactive Disposal is a small micro framework to help manage unmanaged memory. Even though I work in C#, I often use a lot of unmanaged/unsafe memory, meaning I have to release every single one of them.</description>
     </item>
     
   </channel>

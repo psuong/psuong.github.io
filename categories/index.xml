@@ -5,10 +5,19 @@
     <link>/categories/</link>
     <description>Recent content in Categories on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>management</title>
+      <link>/categories/management/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/management/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>infrastructure</title>
