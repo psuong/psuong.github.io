@@ -252,20 +252,21 @@ approach that ended up feeling the most comfortable:</p>
 
 <p>Now this is a basic user story and pretty much you can get the jist of the idea on what we&rsquo;re supposed to implement and why.
 Now, on a game design approach, this makes sense! And we can likely map this to our code. Now, it&rsquo;s worth mentioning that I
-personally prefer doing a &ldquo;data oriented&rdquo; workflow, where data comes first and is mostly separated from</p>
+personally prefer doing a &ldquo;data oriented&rdquo; workflow, where data comes first and is mostly separated from logic operating
+on said data.</p>
 
-<p>But let&rsquo;s think about this technically and architecturally. This user story is pretty basic and leaves a lot to the
+<p>But let&rsquo;s think about this technically. This user story is pretty basic and leaves a lot to the
 imagination. Before anyone starts working on a user story like this, I usually delve into the technical details for a
 few minutes and ask the following questions:</p>
 
 <ol>
-<li>What is the minimum amount of data I need to do x thing?</li>
-<li>Where do I get this data?</li>
-<li>What do I do with this data?</li>
-<li>Where do I put this data?</li>
+<li>What is the minimum amount of data I need to get this working?</li>
+<li>Where do I get said data?</li>
+<li>What do I do with said data?</li>
+<li>Where do I put said data?</li>
 </ol>
 
-<p>Decomposing that user story, I can answer like so:</p>
+<p>So with that said, the user story can be decomposed like so:</p>
 
 <ol>
 <li>I need the:
@@ -290,35 +291,36 @@ offset and apply it to the camera&rsquo;s position</li>
 </ol>
 
 <p>By doing this, we go over specifically the data we need to touch and we can catch what we&rsquo;re missing while we&rsquo;re
-planning, like</p>
+planning, like:</p>
 
 <ul>
 <li>How long does the camera shake?</li>
 </ul>
 
-<p>It allows us as a team to reason about our infrastructure and feature on a technical side and limit the amount of
-surprises we can expect throughout the development process.</p>
+<p>It allows us as a team to reason about our data and limit the number of surprises we run into during development.</p>
 
 <p>Now I&rsquo;m all for iterative and collaborative development, but quite a few people have told me that the way I structure
-this emphasizes a lot on planning early on, which is &ldquo;anti agile.&rdquo; While I can definitely see that</p>
+this emphasizes a lot on planning early on, which is &ldquo;anti agile.&rdquo; While I can definitely see that it may be
+&ldquo;anti-agile&rdquo;, I think making sure everyone on the team understands the data of the feature, we can hold each other
+accountable and keep the standard high.</p>
 
 <h1 id="avoiding-burnout">Avoiding Burnout</h1>
 
 <p>Respect the invidiual who is working on some task! However long it takes is however long it takes. Now in an ideal
 scenario that would be gold, but we live in a world of deadlines and making sure we live and get paid.</p>
 
-<p>If a task honestly takes too long, provide your teammate some help. Rubber duckying and whiteboarding it helps out a
-lot. But this is where I personally think it gets interesting.</p>
+<p>If a task honestly takes too long, see if you can help your teammate. Rubber duckying and whiteboarding helps with
+visualization. But this is where I personally think it gets interesting as you&rsquo;re managing the team.</p>
 
 <p>Imagine this scenario, you&rsquo;ve got a looming deadline in about a month (which is not a lot of time when working part
 time on a project!). Now most indie game developers would go in a period called &ldquo;crunch,&rdquo; which is a mad dash to the
 finish line to get whatever remaining tasks done.</p>
 
-<p>Now this is certainly worth repeating:</p>
+<p>Now this is certainly worth mentioning:</p>
 
 <blockquote>
-<p>Crunch is bad!!! By putting your team under crunch, we encourage a culture where crunch is okay and that the short
-term decisions typically end up being the long term ones.</p>
+<p>Crunch is bad!!! By putting your team under crunch, we ultimately encourage a culture where crunch is okay and that
+the short term decisions typically end up being the long term ones.</p>
 </blockquote>
 
 <p>What I found that worked with the team was:</p>
