@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graphics on Porrith Suong</title>
+    <link>/tags/graphics/</link>
+    <description>Recent content in graphics on Porrith Suong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Custom Scriptable Render Pipeline</title>
+      <link>/projects/custom-srp/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/custom-srp/</guid>
+      <description>The Custom Scriptable Render Pipeline is an ongoing project to create my own render pipeline to use in Unity for future projects.
+Github Link
+   Feature     Rendering Various Layers    Batching Multiple Spheres    Lighting with PBR rendering     </description>
+    </item>
+    
+  </channel>
+</rss>

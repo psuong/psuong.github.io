@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Porrith Suong</title>
@@ -17,16 +17,6 @@
       <guid>/about/</guid>
       <description>I graduated from City College of New York with a Bachelors in Science in Computer Science. I am an avid game developer highly interested in
  Optimizations and high performance computing Game AI Computer Graphics  I&amp;rsquo;ve built a bunch of small workflow tools within Unity and are opened source on Github. Feel free to take a look at various tools I built here.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>So, I&amp;rsquo;ve worked on a number of projects over the years and I definitely need to spruce out this page or split it up in the future, but here are a few projects which meant the most to me:
-Reactive Disposal Reactive Disposal is a small micro framework to help manage unmanaged memory. Even though I work in C#, I often use a lot of unmanaged/unsafe memory, meaning I have to release every single one of them.</description>
     </item>
     
   </channel>

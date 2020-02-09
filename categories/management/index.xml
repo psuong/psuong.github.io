@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>management on Porrith Suong</title>
@@ -17,8 +17,7 @@
       
       <guid>/blog/ten-months-into-the-making/</guid>
       <description>So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think videos do more justice at the moment instead of me pitching, so here&amp;rsquo;s the actual gameplay video link:
- Repurposed Server/Client Gameplay from initialPrefabs on Vimeo.
-Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&amp;rsquo;s 2D challenge.</description>
+Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&amp;rsquo;s 2D challenge. But, considering we only had 3 months and the game was very quite large for the scope of the challenge, I turned the game into a much larger vision.</description>
     </item>
     
   </channel>

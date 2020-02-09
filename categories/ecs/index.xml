@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ecs on Porrith Suong</title>
+    <link>/categories/ecs/</link>
+    <description>Recent content in ecs on Porrith Suong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/ecs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reactive Disposal</title>
+      <link>/projects/reactivedisposal/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/reactivedisposal/</guid>
+      <description>Reactive Disposal is really just a small layer on top of Unity&amp;rsquo;s Entity Component System to dispose unmanaged memory. This is not the same as a garbage collector as it does not do it automatically - the dispose function must still be called but this reduces the amount of code needed to write the same functionality over and over again.
+Github Link</description>
+    </item>
+    
+    <item>
+      <title>UGUIDots</title>
+      <link>/projects/uguidots/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/uguidots/</guid>
+      <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.
+Currently, the only features supported are:
+ Simple image rendering Text rendering Render orders  Github Link
+Preview </description>
+    </item>
+    
+  </channel>
+</rss>

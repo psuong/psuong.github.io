@@ -1,14 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>porrithsuong on Porrith Suong</title>
     <link>/authors/porrithsuong/</link>
     <description>Recent content in porrithsuong on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/authors/porrithsuong/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom Scriptable Render Pipeline</title>
+      <link>/projects/custom-srp/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/custom-srp/</guid>
+      <description>The Custom Scriptable Render Pipeline is an ongoing project to create my own render pipeline to use in Unity for future projects.
+Github Link
+   Feature     Rendering Various Layers    Batching Multiple Spheres    Lighting with PBR rendering     </description>
+    </item>
+    
+    <item>
+      <title>DANI AI</title>
+      <link>/projects/dani-ai/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/dani-ai/</guid>
+      <description>Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI follows a neural network like schema and attempts to treat each agent as an organism with senses that update in realtime.
+Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series of authored actions from the user.
+You can grab it here on the Asset Store.</description>
+    </item>
+    
+    <item>
+      <title>Reactive Disposal</title>
+      <link>/projects/reactivedisposal/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/reactivedisposal/</guid>
+      <description>Reactive Disposal is really just a small layer on top of Unity&amp;rsquo;s Entity Component System to dispose unmanaged memory. This is not the same as a garbage collector as it does not do it automatically - the dispose function must still be called but this reduces the amount of code needed to write the same functionality over and over again.
+Github Link</description>
+    </item>
+    
+    <item>
+      <title>UGUIDots</title>
+      <link>/projects/uguidots/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/uguidots/</guid>
+      <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.
+Currently, the only features supported are:
+ Simple image rendering Text rendering Render orders  Github Link
+Preview </description>
+    </item>
     
     <item>
       <title>Ten Months into the Making of Repurposed</title>
@@ -17,8 +61,7 @@
       
       <guid>/blog/ten-months-into-the-making/</guid>
       <description>So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think videos do more justice at the moment instead of me pitching, so here&amp;rsquo;s the actual gameplay video link:
- Repurposed Server/Client Gameplay from initialPrefabs on Vimeo.
-Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&amp;rsquo;s 2D challenge.</description>
+Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&amp;rsquo;s 2D challenge. But, considering we only had 3 months and the game was very quite large for the scope of the challenge, I turned the game into a much larger vision.</description>
     </item>
     
     <item>
