@@ -5,7 +5,7 @@
     <link>/</link>
     <description>Recent content in Home on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,16 @@
       <description>I graduated from City College of New York with a Bachelors in Science in Computer Science. I am an avid game developer highly interested in
  Optimizations and high performance computing Game AI Computer Graphics  I&amp;rsquo;ve built a bunch of small workflow tools within Unity and are opened source on Github. Feel free to take a look at various tools I built here.
 My Work I founded my own development studio, initialPrefabs, where I primarily do:</description>
+    </item>
+    
+    <item>
+      <title>Starting with Vulkan and Rust</title>
+      <link>/blog/vulcan-rust-part-1/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/vulcan-rust-part-1/</guid>
+      <description>So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C++ and Vulkan, but I&amp;rsquo;d like to start recreating that previous C++ Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
+The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series.</description>
     </item>
     
     <item>

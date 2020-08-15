@@ -5,10 +5,20 @@
     <link>/blog/</link>
     <description>Recent content in Blog on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Starting with Vulkan and Rust</title>
+      <link>/blog/vulcan-rust-part-1/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/vulcan-rust-part-1/</guid>
+      <description>So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C++ and Vulkan, but I&amp;rsquo;d like to start recreating that previous C++ Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
+The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series.</description>
+    </item>
     
     <item>
       <title>UGUIDots Progress Report</title>
