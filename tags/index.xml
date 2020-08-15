@@ -5,10 +5,28 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dod</title>
+      <link>/tags/dod/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ecs</title>
+      <link>/tags/ecs/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ecs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ai</title>
@@ -16,15 +34,6 @@
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ecs</title>
-      <link>/tags/ecs/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ecs/</guid>
       <description></description>
     </item>
     
