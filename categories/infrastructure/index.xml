@@ -5,11 +5,7 @@
     <link>/categories/infrastructure/</link>
     <description>Recent content in infrastructure on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/infrastructure/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="/categories/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scaffolding in Development</title>
       <link>/blog/low-level-apis/</link>

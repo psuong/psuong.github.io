@@ -5,22 +5,19 @@
     <link>/categories/gamedev/</link>
     <description>Recent content in gamedev on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/gamedev/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/gamedev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Video Scripts</title>
-      <link>/projects/videos/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <title>Thousand Ant</title>
+      <link>/work/thousandant/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/projects/videos/</guid>
-      <description>I work with Thousand Ant and create educational videos to explain a client&amp;rsquo;s tech stack. Clients currently include: Unity Technologies and Genvid Technologies.
-Unity Technologies ML Agents 
-In addition to writing the script for the video and providing the screen capture, I also updated and trained the official agents for Unity&amp;rsquo;s Kart Microgame update.
-Device Simulator 
-There are more videos coming and I will update this when Unity officially publishes the videos!</description>
+      <guid>/work/thousandant/</guid>
+      <description>I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.
+Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.
+Flocking with the C# Job System 
+C# Job System: Using DOTS with Managed C# APIs 
+Unity Technologies Physics Optimizations 
+Shader Graph Feature Video</description>
     </item>
     
   </channel>

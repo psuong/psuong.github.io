@@ -5,11 +5,7 @@
     <link>/tags/graphics/</link>
     <description>Recent content in graphics on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting with Vulkan and Rust</title>
       <link>/blog/vulcan-rust-part-1/</link>
@@ -22,10 +18,10 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
     
     <item>
       <title>Custom Scriptable Render Pipeline</title>
-      <link>/projects/custom-srp/</link>
+      <link>/work/custom-srp/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/projects/custom-srp/</guid>
+      <guid>/work/custom-srp/</guid>
       <description>The Custom Scriptable Render Pipeline is an ongoing project to create my own render pipeline to use in Unity for future projects.
 Github Link
    Feature     Rendering Various Layers    Batching Multiple Spheres    Lighting with PBR rendering     </description>
