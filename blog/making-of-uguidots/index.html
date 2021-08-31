@@ -13,7 +13,7 @@
 <meta property='og:site_name' content='Porrith Suong'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/fc0c6099065595e46a011e442e1a48d8?s=256'><meta property='article:section' content='blog'><meta property='article:tag' content='ecs'><meta property='article:tag' content='dod'><meta property='article:published_time' content='2020-04-28T00:00:00Z'/><meta property='article:modified_time' content='2020-04-28T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.85.0" />
 
   <title>UGUIDots Progress Report • Porrith</title>
   <link rel='canonical' href='/blog/making-of-uguidots/'>
@@ -88,6 +88,8 @@
         <a href='/tags/dod/' style='font-size:1em'>dod</a>
       </li><li>
         <a href='/tags/ecs/' style='font-size:2em'>ecs</a>
+      </li><li>
+        <a href='/tags/games/' style='font-size:1em'>games</a>
       </li><li>
         <a href='/tags/graphics/' style='font-size:1.5em'>graphics</a>
       </li><li>
@@ -316,7 +318,6 @@ These UV coordinates are mapped to a font&rsquo;s generated bitmap texture.</p>
 Once the current character is finished, advance to the next character by computing the spacing and offset between each
 letter. The offsetted position then becomes the start position of the next character. This would continue until the
 current character overshoots the max width of the line. From there, the next character is positioned on the next line.</p>
-<p><strong>TODO: Provide a more indepth explanation of alignment</strong></p>
 <p>For a more detailed look of how fonts are generated, the <a href="https://learnopengl.com/In-Practice/Text-Rendering">OpenGL tutorial</a>
 provides a thorough step by step process. The algorithm is actually implemented and adapted in UGUIDOTS using
 TextMeshPro&rsquo;s material and to account for relative screen size.</p>
@@ -347,7 +348,7 @@ system will process that entity and perform its operations. Finally, the messagi
 no longer runs.</p>
 <p>This is implemented into the <code>CanvasScalerSystem</code> because the system should only run if the screen resolution changes.</p>
 <blockquote>
-<p>There isn ECS events developed by <a href="https://github.com/jeffvella/UnityEcsEvents/stargazers">jeffvella</a> which builds
+<p>There is an ECS events developed by <a href="https://github.com/jeffvella/UnityEcsEvents/stargazers">jeffvella</a> which builds
 event queues to publish events at runtime.</p>
 </blockquote>
 <h2 id="anchoring">Anchoring</h2>

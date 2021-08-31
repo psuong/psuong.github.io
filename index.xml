@@ -5,7 +5,7 @@
     <link>/</link>
     <description>Recent content in Home on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>/about/</link>
@@ -18,16 +18,22 @@ My Work I founded my own development studio, initialPrefabs, where I primarily d
     </item>
     
     <item>
+      <title>Games</title>
+      <link>/work/games/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/work/games/</guid>
+      <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!
+Table of Contents  Released  Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball   Not Released  Inwards     Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
+    </item>
+    
+    <item>
       <title>Thousand Ant</title>
       <link>/work/thousandant/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/work/thousandant/</guid>
-      <description>I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.
-Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.
-Flocking with the C# Job System 
-C# Job System: Using DOTS with Managed C# APIs 
-Unity Technologies Kart Microgame My team and I were responsible for updating Unity&amp;rsquo;s Kart Microgame to match more modern arcades.</description>
+      <description>Table of Contents  Thousand Ant  Flocking With the C# Job System C# Job System: Using DOTs with Managed C# APIs   Unity Technologies  Kart Microgame Open Projects Devlg Bolt Adaptive Performance Physics Optimizations Shader Graph UI Toolkit Scriptable Objects ML Agents Device Simulator   Genvid Technologies  I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.</description>
     </item>
     
     <item>
