@@ -17,16 +17,6 @@
     </item>
     
     <item>
-      <title>Reactive Disposal</title>
-      <link>/work/reactivedisposal/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/work/reactivedisposal/</guid>
-      <description>Reactive Disposal is really just a small layer on top of Unity&amp;rsquo;s Entity Component System to dispose unmanaged memory. This is not the same as a garbage collector as it does not do it automatically - the dispose function must still be called but this reduces the amount of code needed to write the same functionality over and over again.
-Github Link</description>
-    </item>
-    
-    <item>
       <title>UGUIDots</title>
       <link>/work/uguidots/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>

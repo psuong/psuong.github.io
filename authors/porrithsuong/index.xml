@@ -13,7 +13,7 @@
       
       <guid>/work/games/</guid>
       <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!
-Table of Contents  Released  Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball   Not Released  Inwards     Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
+Table of Contents  Released  Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball Cell To Singularity   Not Released  Inwards Gestalt: Steam &amp;amp; Cinder Kitty in the Box VR     Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
     </item>
     
     <item>
@@ -46,17 +46,6 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
     </item>
     
     <item>
-      <title>Custom Scriptable Render Pipeline</title>
-      <link>/work/custom-srp/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/work/custom-srp/</guid>
-      <description>The Custom Scriptable Render Pipeline is an ongoing project to create my own render pipeline to use in Unity for future projects.
-Github Link
-   Feature     Rendering Various Layers    Batching Multiple Spheres    Lighting with PBR rendering     </description>
-    </item>
-    
-    <item>
       <title>DANI AI</title>
       <link>/work/dani-ai/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
@@ -65,16 +54,6 @@ Github Link
       <description>Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI follows a neural network like schema and attempts to treat each agent as an organism with senses that update in realtime.
 Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series of authored actions from the user.
 You can grab it here on the Asset Store.</description>
-    </item>
-    
-    <item>
-      <title>Reactive Disposal</title>
-      <link>/work/reactivedisposal/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/work/reactivedisposal/</guid>
-      <description>Reactive Disposal is really just a small layer on top of Unity&amp;rsquo;s Entity Component System to dispose unmanaged memory. This is not the same as a garbage collector as it does not do it automatically - the dispose function must still be called but this reduces the amount of code needed to write the same functionality over and over again.
-Github Link</description>
     </item>
     
     <item>

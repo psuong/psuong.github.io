@@ -13,7 +13,7 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
 <meta property='og:site_name' content='Porrith Suong'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/fc0c6099065595e46a011e442e1a48d8?s=256'><meta property='article:section' content='blog'><meta property='article:tag' content='graphics'><meta property='article:tag' content='vulkan'><meta property='article:tag' content='rust'><meta property='article:published_time' content='2020-08-15T00:00:00Z'/><meta property='article:modified_time' content='2020-08-15T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.85.0" />
+<meta name="generator" content="Hugo 0.88.1" />
 
   <title>Starting with Vulkan and Rust • Porrith</title>
   <link rel='canonical' href='/blog/vulcan-rust-part-1/'>
@@ -47,7 +47,7 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
       </a>
     </h2>
     <div class='desc'>
-    Game Developer, highly interested in low level tech :)
+    Game Developer, highly interested in low level tech
     </div>
   </header>
 
@@ -67,7 +67,7 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
+  <a href='/'>Home</a></li><li class='item has-current'>
   <a href='/blog/'>Blog</a></li><li class='item'>
   <a href='/work/'>Work</a></li><li class='item'>
   <a href='/about/'>About</a></li></ul>
@@ -91,7 +91,7 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
       </li><li>
         <a href='/tags/games/' style='font-size:1em'>games</a>
       </li><li>
-        <a href='/tags/graphics/' style='font-size:1.5em'>graphics</a>
+        <a href='/tags/graphics/' style='font-size:1em'>graphics</a>
       </li><li>
         <a href='/tags/planning/' style='font-size:1em'>planning</a>
       </li><li>
@@ -142,8 +142,8 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
 </button>
     <ul><li class='item'>
         <a href='/'>Home</a>
-      </li><li class='item'>
-        <a href='/blog/'>Blog</a>
+      </li><li class='item current'>
+        <a aria-current='page' href='/blog/'>Blog</a>
       </li><li class='item'>
         <a href='/work/'>Work</a>
       </li><li class='item'>
@@ -163,7 +163,7 @@ The implementation of Vulkan will primarily be based on this tutorial. This blog
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Porrith Suong</p><p class='desc site-desc'>Game Developer, highly interested in low level tech :)</p>
+          <div class='header-info'><p class='site-title title'>Porrith Suong</p><p class='desc site-desc'>Game Developer, highly interested in low level tech</p>
           </div>
         </div>
       </header>
@@ -244,7 +244,7 @@ will cover the <a href="https://vulkan-tutorial.com/Drawing_a_triangle/Setup/Ins
 <h2 id="structs">Structs</h2>
 <p>Structs in Rust are typically styled in a C like fashion. With Vulkan, I ended up defining a <code>VulkanApp</code> struct which
 contains an <code>_entry</code> and an <code>_instance</code> field.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> ash::version::{EntryV1_0, InstanceV1_0};
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> ash::version::{EntryV1_0, InstanceV1_0};
 <span style="color:#66d9ef">use</span> ash::{vk, Entry, Instance};
 <span style="color:#66d9ef">use</span> std::{error::Error, ffi::CString, result::Result};
 
@@ -256,14 +256,14 @@ contains an <code>_entry</code> and an <code>_instance</code> field.</p>
 </code></pre></div><p>What&rsquo;s interesting about Rust, is the implementation is typically defined out of the structure using the <code>impl</code> keyword.
 Coming from C#/C++, this looks a bit odd since I didn&rsquo;t have to define the function protoypes in a header, but just write
 out the implementation in a different section.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> VulkanApp <span style="color:#75715e">// &lt;- Like a header, I just defined the implemented functions on a type like so
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> VulkanApp <span style="color:#75715e">// &lt;- Like a header, I just defined the implemented functions on a type like so
 </span><span style="color:#75715e"></span>{
     <span style="color:#75715e">// Some function implementations here
 </span><span style="color:#75715e"></span>}
 </code></pre></div><p>So with Vulkan, I have to create an instance which I can access. The ash crate follows a Fluent like API, which is also
 commonly referred to as a builder pattern. Here&rsquo;s a page on <a href="https://en.wikipedia.org/wiki/Fluent_interface">Wikipedia</a>
 about said pattern, I&rsquo;ve certainly seen this style around and it is very human readable.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> VulkanApp
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> VulkanApp
 {
     <span style="color:#75715e">// Pretty much my constructor written in a function
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">new</span>() -&gt; Result<span style="color:#f92672">&lt;</span>Self, Box<span style="color:#f92672">&lt;</span>dyn Error<span style="color:#f92672">&gt;&gt;</span>
@@ -326,7 +326,7 @@ referenced as <code>mod util</code> in the import section of the file.</p>
 there will be cases where libraries and extensions are only available on the platform. While C based language can provide
 scripting defines and define locks per platform, Rust provides an attribute called <code>cfg</code>. The <code>cfg</code> attribute provides
 conditional compilation like in the util.rs file example below.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> ash::extensions::khr::Surface;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> ash::extensions::khr::Surface;
 
 <span style="color:#75715e">#[cfg(target_so = </span><span style="color:#e6db74">&#34;windows&#34;</span><span style="color:#75715e">)]</span>
 <span style="color:#66d9ef">use</span> ash::extensions::khr::Win32Surface;
@@ -359,7 +359,7 @@ support in the unsafe context, so we can interop Rust with external libraries li
 library).</p>
 <p>In the <code>unsafe</code> block, a value of type <code>Result</code> is returned. The <code>Result</code> is a kind of conditional yield. If the operation
 is successful, then the <code>Ok</code> enum will execute, otherwise the <code>Err</code> enum will execute.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">unsafe</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">unsafe</span> 
 { 
     Ok(entry.create_instance(<span style="color:#f92672">&amp;</span>instance_create_info, None)<span style="color:#f92672">?</span>)  <span style="color:#75715e">// Everything is a-ok to create the Vulkan instance.
 </span><span style="color:#75715e"></span>}
@@ -367,7 +367,7 @@ is successful, then the <code>Ok</code> enum will execute, otherwise the <code>E
 <p>Langages like C#/C++ allow you to define a destructor, which is a form of cleanup when the structure leaves out of scope.
 This is done with RAII in C++ and C# handled by the GC for managed objects.</p>
 <p>Rust has a form of a destructor called <code>Drop</code>, which is exactly like C++ or C# destructor.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> Drop <span style="color:#66d9ef">for</span> VulkanApp 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> Drop <span style="color:#66d9ef">for</span> VulkanApp 
 {
     <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">drop</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self) 
     {
@@ -381,7 +381,7 @@ This is done with RAII in C++ and C# handled by the GC for managed objects.</p>
 </code></pre></div><h2 id="running-the-application">Running the Application</h2>
 <p>The <code>run</code> function is very simple for now. All I am doing at the moment is simply logging that the application is running
 after creating the Vulkan instance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self)
 {
     log::debug<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;Running Application.&#34;</span>);
 }
@@ -392,7 +392,7 @@ value moves, the previous variable <code>y</code> is no cleaned up and has no re
 dealt with.</p>
 <h3 id="the-main-function">The main() function</h3>
 <p>I think by convention, most programming languages will declare a <code>main</code> function as the entry point for any program.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>()
 {
     env_logger::init();
     <span style="color:#66d9ef">match</span> VulkanApp::new() 

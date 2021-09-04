@@ -16,16 +16,5 @@
 The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series.</description>
     </item>
     
-    <item>
-      <title>Custom Scriptable Render Pipeline</title>
-      <link>/work/custom-srp/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/work/custom-srp/</guid>
-      <description>The Custom Scriptable Render Pipeline is an ongoing project to create my own render pipeline to use in Unity for future projects.
-Github Link
-   Feature     Rendering Various Layers    Batching Multiple Spheres    Lighting with PBR rendering     </description>
-    </item>
-    
   </channel>
 </rss>
