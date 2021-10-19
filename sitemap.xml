@@ -2,121 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/archive/blog/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
+  </url><url>
+    <loc>/archive/work/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
+  </url><url>
+    <loc>/archive/page/about/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
+  </url><url>
+    <loc>/post/initialprefabs/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/work/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <loc>/readme/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>/post/thousand-ant/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/authors/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <loc>/archive/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/work/games/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <loc>/archive/work/games/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/games/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/games/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/authors/porrithsuong/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/gamedev/</loc>
-    <lastmod>2021-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/work/thousandant/</loc>
-    <lastmod>2021-04-02T00:00:00+00:00</lastmod>
+    <loc>/archive/work/thousandant/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/videos/</loc>
-    <lastmod>2021-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/graphics/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/graphics/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/rust/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/rust/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/blog/vulcan-rust-part-1/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <loc>/archive/blog/vulcan-rust-part-1/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/vulkan/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/vulkan/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/dod/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/dod/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/ecs/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/ecs/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/blog/making-of-uguidots/</loc>
-    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+    <loc>/archive/blog/making-of-uguidots/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/ai/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/ai/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/work/dani-ai/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+    <loc>/archive/work/dani-ai/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/work/uguidots/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+    <loc>/archive/work/uguidots/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/ui/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/ui/</loc>
-    <lastmod>2020-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/management/</loc>
-    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/planning/</loc>
-    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/blog/ten-months-into-the-making/</loc>
-    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <loc>/archive/blog/ten-months-into-the-making/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/tags/apis/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
     <loc>/categories/infrastructure/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/blog/low-level-apis/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>/archive/blog/low-level-apis/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/page/</loc>
-  </url><url>
-    <loc>/series/</loc>
+    <loc>/archive/authors/</loc>
+    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url>
 </urlset>

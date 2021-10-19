@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='/css/frameworks.min.css' />
+    <link rel="stylesheet" href='/css/github.min.css' />
+    <link rel="stylesheet" href='/css/github-style.css' />
+    <link rel="stylesheet" href='/css/light.css' />
+    <link rel="stylesheet" href='/css/dark.css' />
+    <link rel="stylesheet" href='/css/syntax.css' />
+    <title>Starting with Vulkan and Rust - Porrith Suong</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/favicon.ico'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C&#43;&#43; and Vulkan, but I&amp;rsquo;d like to start recreating that previous C&#43;&#43; Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
+The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series." />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/archive/blog/vulcan-rust-part-1/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Starting with Vulkan and Rust - Porrith Suong" />
+<meta name="twitter:description"
+  content="So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C&#43;&#43; and Vulkan, but I&amp;rsquo;d like to start recreating that previous C&#43;&#43; Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
+The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Starting with Vulkan and Rust - Porrith Suong">
+<meta property="og:description"
+  content="So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C&#43;&#43; and Vulkan, but I&amp;rsquo;d like to start recreating that previous C&#43;&#43; Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
+The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series." />
+<meta property="og:url" content="/archive/blog/vulcan-rust-part-1/" />
+<meta property="og:site_name" content="Starting with Vulkan and Rust" />
+<meta property="og:image"
+  content="/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-08-15 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="/">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="/">
+                  <img class=" avatar-user"
+                    src="/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="/">Porrith Suong</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="/archive/blog/vulcan-rust-part-1/">Starting with Vulkan and Rust</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Sat, 15 Aug 2020 00:00:00 &#43;0000"
+                    class="no-wrap">
+                    Sat, 15 Aug 2020 00:00:00 &#43;0000</relative-time>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" class="btn btn-octicon m-0 mr-2 p-2" aria-haspopup="menu" aria-label="Table of Contents" role="button">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                          952 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="/tags/graphics">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      graphics
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/vulkan">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      vulkan
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/rust">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      rust
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5">
+                <article class="markdown-body entry-content container-lg"><p>So I&rsquo;ve always wanted to learn Rust and Vulkan together. I&rsquo;ve done a bit of it before using C++ and Vulkan, but I&rsquo;d like to
+start recreating that previous C++ Vulkan Renderer with Rust. So in these series of blog posts - I&rsquo;ll write some public notes
+on Rust and how it is interfaced with the Vulkan ash crate.</p>
+<p>The implementation of Vulkan will primarily be based on this <a href="https://vulkan-tutorial.com/">tutorial</a>. This blog post
+will cover the <a href="https://vulkan-tutorial.com/Drawing_a_triangle/Setup/Instance">Instance</a> section of the tutorial series.</p>
+<p>Without further ado, let&rsquo;s get started!</p>
+<h2 id="structs">Structs</h2>
+<p>Structs in Rust are typically styled in a C like fashion. With Vulkan, I ended up defining a <code>VulkanApp</code> struct which
+contains an <code>_entry</code> and an <code>_instance</code> field.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">use</span><span class="w"> </span><span class="n">ash</span>::<span class="n">version</span>::<span class="p">{</span><span class="n">EntryV1_0</span><span class="p">,</span><span class="w"> </span><span class="n">InstanceV1_0</span><span class="p">};</span><span class="w">
+</span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">ash</span>::<span class="p">{</span><span class="n">vk</span><span class="p">,</span><span class="w"> </span><span class="n">Entry</span><span class="p">,</span><span class="w"> </span><span class="n">Instance</span><span class="p">};</span><span class="w">
+</span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="p">{</span><span class="n">error</span>::<span class="n">Error</span><span class="p">,</span><span class="w"> </span><span class="n">ffi</span>::<span class="n">CString</span><span class="p">,</span><span class="w"> </span><span class="n">result</span>::<span class="nb">Result</span><span class="p">};</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">struct</span> <span class="nc">VulkanApp</span><span class="w">
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">_entry</span>: <span class="nc">Entry</span><span class="p">,</span><span class="w">
+</span><span class="w">    </span><span class="n">_instance</span>: <span class="nc">Instance</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><p>What&rsquo;s interesting about Rust, is the implementation is typically defined out of the structure using the <code>impl</code> keyword.
+Coming from C#/C++, this looks a bit odd since I didn&rsquo;t have to define the function protoypes in a header, but just write
+out the implementation in a different section.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">impl</span><span class="w"> </span><span class="n">VulkanApp</span><span class="w"> </span><span class="c1">// &lt;- Like a header, I just defined the implemented functions on a type like so
+</span><span class="c1"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="c1">// Some function implementations here
+</span><span class="c1"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><p>So with Vulkan, I have to create an instance which I can access. The ash crate follows a Fluent like API, which is also
+commonly referred to as a builder pattern. Here&rsquo;s a page on <a href="https://en.wikipedia.org/wiki/Fluent_interface">Wikipedia</a>
+about said pattern, I&rsquo;ve certainly seen this style around and it is very human readable.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">impl</span><span class="w"> </span><span class="n">VulkanApp</span><span class="w">
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="c1">// Pretty much my constructor written in a function
+</span><span class="c1"></span><span class="w">    </span><span class="k">fn</span> <span class="nf">new</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="n">Self</span><span class="p">,</span><span class="w"> </span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">dyn</span><span class="w"> </span><span class="n">Error</span><span class="o">&gt;&gt;</span><span class="w">
+</span><span class="w">    </span><span class="p">{</span><span class="w">
+</span><span class="w">        </span><span class="n">log</span>::<span class="n">info</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Creating application&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ash</span>::<span class="n">Entry</span>::<span class="n">new</span><span class="p">().</span><span class="n">expect</span><span class="p">(</span><span class="s">&#34;Failed to create entry!&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Self</span>::<span class="n">create_instance</span><span class="p">(</span><span class="o">&amp;</span><span class="n">entry</span><span class="p">)</span><span class="o">?</span><span class="p">;</span><span class="w">
+</span><span class="w">
+</span><span class="w">        </span><span class="nb">Ok</span><span class="p">(</span><span class="n">Self</span><span class="w">
+</span><span class="w">           </span><span class="p">{</span><span class="w">
+</span><span class="w">               </span><span class="n">_entry</span>: <span class="nc">entry</span><span class="p">,</span><span class="w">
+</span><span class="w">               </span><span class="n">_instance</span><span class="w"> </span>: <span class="nc">instance</span><span class="w">
+</span><span class="w">           </span><span class="p">})</span><span class="w">
+</span><span class="w">    </span><span class="p">}</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span><span class="k">fn</span> <span class="nf">create_instance</span><span class="p">(</span><span class="n">entry</span>: <span class="kp">&amp;</span><span class="nc">Entry</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">Result</span><span class="o">&lt;</span><span class="n">Instance</span><span class="p">,</span><span class="w"> </span><span class="nb">Box</span><span class="o">&lt;</span><span class="n">dyn</span><span class="w"> </span><span class="n">Error</span><span class="o">&gt;&gt;</span><span class="w">
+</span><span class="w">    </span><span class="p">{</span><span class="w">
+</span><span class="w">        </span><span class="c1">// Some really nice Fluent API right here!
+</span><span class="c1"></span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">app_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vk</span>::<span class="n">ApplicationInfo</span>::<span class="n">builder</span><span class="p">()</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">application_name</span><span class="p">(</span><span class="n">CString</span>::<span class="n">new</span><span class="p">(</span><span class="s">&#34;Vulkan Application&#34;</span><span class="p">)</span><span class="o">?</span><span class="p">.</span><span class="n">as_c_str</span><span class="p">())</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">application_version</span><span class="p">(</span><span class="n">ash</span>::<span class="n">vk_make_version</span><span class="o">!</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">engine_name</span><span class="p">(</span><span class="n">CString</span>::<span class="n">new</span><span class="p">(</span><span class="s">&#34;No Engine&#34;</span><span class="p">)</span><span class="o">?</span><span class="p">.</span><span class="n">as_c_str</span><span class="p">())</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">engine_version</span><span class="p">(</span><span class="n">ash</span>::<span class="n">vk_make_version</span><span class="o">!</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">api_version</span><span class="p">(</span><span class="n">ash</span>::<span class="n">vk_make_version</span><span class="o">!</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">build</span><span class="p">();</span><span class="w">
+</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">extension_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">util</span>::<span class="n">required_extension_names</span><span class="p">();</span><span class="w">
+</span><span class="w">
+</span><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">instance_create_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vk</span>::<span class="n">InstanceCreateInfo</span>::<span class="n">builder</span><span class="p">()</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">application_info</span><span class="p">(</span><span class="o">&amp;</span><span class="n">app_info</span><span class="p">)</span><span class="w">
+</span><span class="w">            </span><span class="p">.</span><span class="n">enabled_extension_names</span><span class="p">(</span><span class="o">&amp;</span><span class="n">extension_names</span><span class="p">);</span><span class="w">
+</span><span class="w">
+</span><span class="w">        </span><span class="k">unsafe</span><span class="w"> 
+</span><span class="w">        </span><span class="p">{</span><span class="w"> 
+</span><span class="w">            </span><span class="nb">Ok</span><span class="p">(</span><span class="n">entry</span><span class="p">.</span><span class="n">create_instance</span><span class="p">(</span><span class="o">&amp;</span><span class="n">instance_create_info</span><span class="p">,</span><span class="w"> </span><span class="nb">None</span><span class="p">)</span><span class="o">?</span><span class="p">)</span><span class="w"> 
+</span><span class="w">        </span><span class="p">}</span><span class="w">
+</span><span class="w">    </span><span class="p">}</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id="the--operator">The ? Operator</h2>
+<p>Okay, so there are some things I need to go over with the <code>create_instance</code> function. Let&rsquo;s focus on this line first:</p>
+<p><code>.application_name(CString::new(&quot;Vulkan Application&quot;)?.as_c_str())</code></p>
+<blockquote>
+<p>What the heck does the <code>?</code> mean?</p>
+</blockquote>
+<p>Well first, we use a type called <code>CString</code>, which is a C compatible string (remember that in C, we define strings like so
+<code>char*</code>). Rust does not have exceptions per say, what they introduce is something called panics, which have limited functionality.
+Panics are typically non recoverable, but we can perform something similar to a &ldquo;try-catch&rdquo; using a <code>match</code> statement on
+a <code>Result</code> struct (I&rsquo;ll show this later).</p>
+<p>The <code>?</code> operator is just a short hand similar to the null coalescense operator. If there is no error, then the <code>as_c_str()</code>
+function will execute. Otherwise, the function will early out.</p>
+<h2 id="using-functions-implemented-in-another-file">Using Functions Implemented in Another File</h2>
+<p>It&rsquo;s not very obvious from the code snippet, but the <code>util:required_extension_names()</code> is a function implemented in a
+different file.</p>
+<p>Like most programming languages, I typically import the other file using the <code>mod</code> keyword (other langauges like C
+will use the <code>#include</code> define). Files are typically organized as modules in Rust so a file like <code>util.rs</code> will be
+referenced as <code>mod util</code> in the import section of the file.</p>
+<h3 id="per-platform-configurations">Per Platform Configurations</h3>
+<p>Rust is designed to work on major operating systems such as Windows, Linux, and macOS. So for a cross compiled language,
+there will be cases where libraries and extensions are only available on the platform. While C based language can provide
+scripting defines and define locks per platform, Rust provides an attribute called <code>cfg</code>. The <code>cfg</code> attribute provides
+conditional compilation like in the util.rs file example below.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">use</span><span class="w"> </span><span class="n">ash</span>::<span class="n">extensions</span>::<span class="n">khr</span>::<span class="n">Surface</span><span class="p">;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="cp">#[cfg(target_so = </span><span class="s">&#34;windows&#34;</span><span class="cp">)]</span><span class="w">
+</span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">ash</span>::<span class="n">extensions</span>::<span class="n">khr</span>::<span class="n">Win32Surface</span><span class="p">;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="cp">#[cfg(target_os = </span><span class="s">&#34;windows&#34;</span><span class="cp">)]</span><span class="w">
+</span><span class="w"></span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">required_extension_names</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nb">Vec</span><span class="o">&lt;*</span><span class="k">const</span><span class="w"> </span><span class="kt">i8</span><span class="o">&gt;</span><span class="w"> 
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">vec</span><span class="o">!</span><span class="p">[</span><span class="w">
+</span><span class="w">        </span><span class="n">Surface</span>::<span class="n">name</span><span class="p">().</span><span class="n">as_ptr</span><span class="p">(),</span><span class="w"> 
+</span><span class="w">        </span><span class="n">Win32Surface</span>::<span class="n">name</span><span class="p">().</span><span class="n">as_ptr</span><span class="p">()</span><span class="w">
+</span><span class="w">    </span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="cp">#[cfg(target_os = </span><span class="s">&#34;macos&#34;</span><span class="cp">)]</span><span class="w">
+</span><span class="w"></span><span class="k">use</span><span class="w"> </span><span class="n">ash</span>::<span class="n">extensions</span>::<span class="n">mvk</span>::<span class="n">MacOSSurface</span><span class="p">;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="cp">#[cfg(target_os = </span><span class="s">&#34;macos&#34;</span><span class="cp">)]</span><span class="w">
+</span><span class="w"></span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">required_extension_names</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nb">Vec</span><span class="o">&lt;*</span><span class="k">const</span><span class="w"> </span><span class="kt">i8</span><span class="o">&gt;</span><span class="w">
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">vec</span><span class="o">!</span><span class="p">[</span><span class="w">
+</span><span class="w">        </span><span class="n">Surface</span>::<span class="n">name</span><span class="p">().</span><span class="n">as_ptr</span><span class="p">(),</span><span class="w"> 
+</span><span class="w">        </span><span class="n">MacOSSurface</span>::<span class="n">name</span><span class="p">().</span><span class="n">as_ptr</span><span class="p">()</span><span class="w">
+</span><span class="w">    </span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id="unsafe">Unsafe</h2>
+<p>All safe functions from the standard library are built on &ldquo;unsafe&rdquo; functionality, which means that the code isn&rsquo;t inherently
+unsafe to use, but can have unexpected behaviours if used improperly. Pointers, while common in C and C++, are typically
+hidden in languages like Java and C# (although C# provides pointers via unsafe feature too!). Rust provides pointer
+support in the unsafe context, so we can interop Rust with external libraries like Vulkan (which is originally a C
+library).</p>
+<p>In the <code>unsafe</code> block, a value of type <code>Result</code> is returned. The <code>Result</code> is a kind of conditional yield. If the operation
+is successful, then the <code>Ok</code> enum will execute, otherwise the <code>Err</code> enum will execute.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">unsafe</span><span class="w"> 
+</span><span class="w"></span><span class="p">{</span><span class="w"> 
+</span><span class="w">    </span><span class="nb">Ok</span><span class="p">(</span><span class="n">entry</span><span class="p">.</span><span class="n">create_instance</span><span class="p">(</span><span class="o">&amp;</span><span class="n">instance_create_info</span><span class="p">,</span><span class="w"> </span><span class="nb">None</span><span class="p">)</span><span class="o">?</span><span class="p">)</span><span class="w">  </span><span class="c1">// Everything is a-ok to create the Vulkan instance.
+</span><span class="c1"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id="implementing-the-drop-trait-for-vulkanapp">Implementing the Drop trait for VulkanApp</h2>
+<p>Langages like C#/C++ allow you to define a destructor, which is a form of cleanup when the structure leaves out of scope.
+This is done with RAII in C++ and C# handled by the GC for managed objects.</p>
+<p>Rust has a form of a destructor called <code>Drop</code>, which is exactly like C++ or C# destructor.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">impl</span><span class="w"> </span><span class="nb">Drop</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">VulkanApp</span><span class="w"> 
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="k">fn</span> <span class="nf">drop</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="w"> 
+</span><span class="w">    </span><span class="p">{</span><span class="w">
+</span><span class="w">        </span><span class="n">log</span>::<span class="n">debug</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Dropping application.&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="k">unsafe</span><span class="w"> 
+</span><span class="w">        </span><span class="p">{</span><span class="w">
+</span><span class="w">            </span><span class="bp">self</span><span class="p">.</span><span class="n">_instance</span><span class="p">.</span><span class="n">destroy_instance</span><span class="p">(</span><span class="nb">None</span><span class="p">);</span><span class="w">
+</span><span class="w">        </span><span class="p">}</span><span class="w">
+</span><span class="w">    </span><span class="p">}</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id="running-the-application">Running the Application</h2>
+<p>The <code>run</code> function is very simple for now. All I am doing at the moment is simply logging that the application is running
+after creating the Vulkan instance.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">run</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="w">
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">log</span>::<span class="n">debug</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Running Application.&#34;</span><span class="p">);</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><p>Just some additional notes:</p>
+<p>Rust by default will always declare variables as <em><strong>immutable</strong></em>. To allow mutability on a variable, you add the <code>mut</code> keyword.</p>
+<p>When assigning variables in Rust, like <code>let x = y</code>, Rust moves the owner ship of the value of <code>y</code> to <code>x</code>. When the
+value moves, the previous variable <code>y</code> is no cleaned up and has no reference. This ensures <code>dangling</code> pointers are properly
+dealt with.</p>
+<h3 id="the-main-function">The main() function</h3>
+<p>I think by convention, most programming languages will declare a <code>main</code> function as the entry point for any program.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w">
+</span><span class="w"></span><span class="p">{</span><span class="w">
+</span><span class="w">    </span><span class="n">env_logger</span>::<span class="n">init</span><span class="p">();</span><span class="w">
+</span><span class="w">    </span><span class="k">match</span><span class="w"> </span><span class="n">VulkanApp</span>::<span class="n">new</span><span class="p">()</span><span class="w"> 
+</span><span class="w">    </span><span class="p">{</span><span class="w">
+</span><span class="w">        </span><span class="nb">Ok</span><span class="p">(</span><span class="k">mut</span><span class="w"> </span><span class="n">app</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(),</span><span class="w">
+</span><span class="w">        </span><span class="nb">Err</span><span class="p">(</span><span class="n">error</span><span class="p">)</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">log</span>::<span class="n">error</span><span class="o">!</span><span class="p">(</span><span class="s">&#34;Failed to create application. Cause: {}&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">),</span><span class="w">
+</span><span class="w">    </span><span class="p">}</span><span class="w">
+</span><span class="w"></span><span class="p">}</span><span class="w">
+</span></code></pre></div><p>I initialize a logger so I can log any kinds of errors and implement the <code>match</code> statement. Since the <code>new()</code> function
+will return a <code>Result&lt;T, U&gt;</code>, I explicitly implement the <code>Ok</code> and <code>Err</code> states. If the application runs without errors,
+then I run the <code>app.run()</code>. Otherwise, I&rsquo;ll log the error.</p>
+<p>I&rsquo;m currently working on the validation layers. Once I&rsquo;m done with that, I can write the next entry in this blog series
+about implementing validation layers.</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+ 
+ 
+ 
+ window.onload = function () {
+   const header = document.getElementById('post-header');
+   const headerHeight = header.offsetHeight;
+   
+   document.documentElement.style.scrollPaddingTop = headerHeight + 10 + "px";
+ }
+
+ const tocToggleButton = document.getElementById("toc-toggle");
+
+ const tippyInstance = tippy('#toc-toggle', {
+  trigger: 'click',
+  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#structs\u0022\u003eStructs\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#the--operator\u0022\u003eThe ? Operator\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#using-functions-implemented-in-another-file\u0022\u003eUsing Functions Implemented in Another File\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#per-platform-configurations\u0022\u003ePer Platform Configurations\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#unsafe\u0022\u003eUnsafe\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#implementing-the-drop-trait-for-vulkanapp\u0022\u003eImplementing the Drop trait for VulkanApp\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#running-the-application\u0022\u003eRunning the Application\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#the-main-function\u0022\u003eThe main() function\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
+  allowHTML: true,
+  placement: 'bottom-start',
+  interactive: true,
+  arrow: false,
+  maxWidth: "none",
+  onHide: function () { tocToggleButton.classList.remove("hover"); },
+  onShow: function () { tocToggleButton.classList.add("hover"); },
+  onShown: function () {
+    selectTableOfContentsOption();
+
+    if (window.hasSetupTableOfContentsListeners) {
+      return;
+    }
+
+    const tableOfContents = document.getElementById("table-of-contents");
+    tableOfContents.addEventListener('click', function () {
+      
+      tippyInstance[0].hide();
+    });
+
+    window.hasSetupTableOfContentsListeners = true;
+  }
+ });
+
+ function selectTableOfContentsOption () {
+   const optionSelectedClass = 'table-of-contents-option-selected';
+
+   const tableOfContentsOptions = document.querySelectorAll("#table-of-contents > nav > ul li");
+
+   for (const option of tableOfContentsOptions) {
+     
+
+     const [child] = option.children;
+     if (child.tagName.toLowerCase() !== 'a') {
+       continue;
+     }
+
+     if (window.location.href === child.href) {
+       child.classList.add(optionSelectedClass);
+     } else {
+       child.classList.remove(optionSelectedClass);
+     }
+   }
+ }
+
+ window.onhashchange = selectTableOfContentsOption;
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="/js/github-style.js"></script>
+
+
+
+</html>

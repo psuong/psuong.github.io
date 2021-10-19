@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='/css/frameworks.min.css' />
+    <link rel="stylesheet" href='/css/github.min.css' />
+    <link rel="stylesheet" href='/css/github-style.css' />
+    <link rel="stylesheet" href='/css/light.css' />
+    <link rel="stylesheet" href='/css/dark.css' />
+    <link rel="stylesheet" href='/css/syntax.css' />
+    <title>UGUIDots Progress Report - Porrith Suong</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/favicon.ico'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
+ While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/archive/blog/making-of-uguidots/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="UGUIDots Progress Report - Porrith Suong" />
+<meta name="twitter:description"
+  content="UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
+ While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="UGUIDots Progress Report - Porrith Suong">
+<meta property="og:description"
+  content="UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
+ While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
+<meta property="og:url" content="/archive/blog/making-of-uguidots/" />
+<meta property="og:site_name" content="UGUIDots Progress Report" />
+<meta property="og:image"
+  content="/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-04-28 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="/">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="/">
+                  <img class=" avatar-user"
+                    src="/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="/">Porrith Suong</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="/archive/blog/making-of-uguidots/">UGUIDots Progress Report</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Tue, 28 Apr 2020 00:00:00 &#43;0000"
+                    class="no-wrap">
+                    Tue, 28 Apr 2020 00:00:00 &#43;0000</relative-time>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" class="btn btn-octicon m-0 mr-2 p-2" aria-haspopup="menu" aria-label="Table of Contents" role="button">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                          2245 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="/tags/ecs">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      ecs
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/dod">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      dod
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5">
+                <article class="markdown-body entry-content container-lg"><p><a href="https://github.com/InitialPrefabs/UGUIDots">UGUIDOTS</a> is a data oriented workflow of Unity default runtime UI, UGUI.
+This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works
+with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).</p>
+<blockquote>
+<p>While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and
+have a good understanding of the UI Pipeline.</p>
+</blockquote>
+<h2 id="how-it-came-to-be">How it came to be?</h2>
+<p>UGUIDOTS was born from my need to have a much more efficient UI system for mobile and lower end hardware. When demoing
+<a href="https://initialprefabs.com/games/repurpose/">Project Arena</a> (now called Carte Diem) at PlayNYC, I noticed that my
+demo devices were heating up too quickly after short play sessions. This was primarily due to Unity&rsquo;s auto batching and
+mesh rebuilding for their UI taking a large slice of the CPU.</p>
+<p>So, more work done over extended periods of time means more heat generated. On mobile devices, this can mean a very
+uncomfortable play session.</p>
+<h2 id="why-does-this-happen">Why does this happen?</h2>
+<p>Well Unity&rsquo;s UI has a tendency to auto batch common UI elements. The goal behind this is to limit the number of draw
+calls issued to the GPU. By combining elements together into a single mesh, Unity can send less instructions and upload
+everything it needs in one as little calls as possible.</p>
+<p>This is interesting by design, due to doing the heavy lifting for you but can be flawed. For example, let&rsquo;s take a
+simple nested UI with the same material and texture. By design, Unity will batch the hierarchy into 1 draw call.
+You can see this in the Frame Debugger at Editor or runtime.</p>
+<p><img src="/images/uguidots/hierarchy.jpg" alt="hierarchy">
+<img src="/images/uguidots/frame-debugger.jpg" alt="frame-debugger"></p>
+<p>This made me wonder how images moved if there was a single draw call to render all the images. If an image
+moves, then the whole canvas is marked dirty and rebuilt. Now splitting your UI into smaller canvases is a <a href="https://unity3d.com/how-to/unity-ui-optimization-tips">Unity
+recommended optimization tip</a>, but it <em>does not solve the
+underlining issue</em>.</p>
+<h2 id="the-first-attempt">The First Attempt</h2>
+<p>The first step to building UGUIDOTS was to build a basic image. Typically images will just have 4 vertices and 6 indices
+as its basic building block, effectively a quad. (I&rsquo;m selectively ignoring 9 slicing images because I have not yet
+supported that feature yet).</p>
+<p>Instead of batching all the elements together, I left each image to have it&rsquo;s own draw call. I figure:</p>
+<blockquote>
+<p>instead of just rebatching the UI altogether and recomputing where the new vertices will be, why not just have them
+drawn individually and update the transformation matrix? This makes the systems much simpler to work with.</p>
+</blockquote>
+<p>The idea was very naive, but it worked. Now my issue was that I was issuing more draw calls than necessary to draw a
+few simple shapes. After some basic tests and battery usage comparisons, I saw that the idea, while it solved the issue
+of updating a single element&rsquo;s position/color, it used way more battery life than I expected (8% app battery usage
+compared to UGUI&rsquo;s 5% app usage in 30 minutes).</p>
+<p>Ultimately, I had to batch and instruct the same number of draw calls as Unity&rsquo;s Default UI System to ensure its
+performance when rendering.</p>
+<h2 id="the-second-attempt">The Second Attempt</h2>
+<p>There was a question that came to my mind when revisiting the batching issue:</p>
+<ul>
+<li>Should UGUIDOTS automatically handle batching for me as a user?</li>
+</ul>
+<p>At the time, all I wanted was to have a joystick UI that was dynamic and followed the finger&rsquo;s position. Ultimately,
+I foregoed the idea of runtime batcher because I would effectively be recreating Unity&rsquo;s UI in DOTS. Instead, it made
+much more sense to perform static analysis on the hierarchy and embed this information for runtime. Rather than recreate
+the batch whenever there is a change in the UI, the information is readily available in case there is a need to rebuild
+and rerender the UI.</p>
+<h3 id="batches">Batches</h3>
+<p>Batches are stored into a few parts&hellip;</p>
+<ol>
+<li>An array of rendered elements</li>
+<li>An array of spans, which define which vertices and indices belong to which batch</li>
+<li>An array of spans, which define which entity is associated with which batch</li>
+</ol>
+<p>However, there are certainly some limitations in regards to static analysis. Dynamic UI is not as easy as you have to
+predefine the number of elements early on or manually manipulate the runtime representation of the batch, which can
+become very messy.</p>
+<h2 id="text-text-text">Text, text, text</h2>
+<p>My biggest gripe with text in C# or even C++, is the <code>string</code> type. There are times when I need immutable string values,
+which means that the system implementation of string is good enough for me, but for most intensive purposes, I actually
+needed to update the string value.</p>
+<p>For example, take a health text you want to update frequently. By constantly reassigning the string variable with a
+numerical representation, the garbage collector will collect the previous value of the string as it is no longer
+being used.</p>
+<p>For this, I need a mutable string type, which is typically in the form a character array or character pointer. Natively,
+<code>string</code> types can be represented through the <code>FixedString</code> types, but I opted to use a <code>DynamicBuffer&lt;CharElement&gt;</code>,
+such that</p>
+<ol>
+<li>it is easier to debug in the EntityDebugger</li>
+<li>they can be treated as mutable strings by simply updating an index or resizing the buffer to match the string&rsquo;s # of chars</li>
+</ol>
+<h2 id="rendering-text">Rendering Text</h2>
+<p>Rendering text is surprisingly simple. Each character is represented by a quad with a series of defined UV coordinates.
+These UV coordinates are mapped to a font&rsquo;s generated bitmap texture.</p>
+<p>Font files have embedded metrics which can be read to procedurally construct the mesh at specified positions and sizes.
+Once the current character is finished, advance to the next character by computing the spacing and offset between each
+letter. The offsetted position then becomes the start position of the next character. This would continue until the
+current character overshoots the max width of the line. From there, the next character is positioned on the next line.</p>
+<p>For a more detailed look of how fonts are generated, the <a href="https://learnopengl.com/In-Practice/Text-Rendering">OpenGL tutorial</a>
+provides a thorough step by step process. The algorithm is actually implemented and adapted in UGUIDOTS using
+TextMeshPro&rsquo;s material and to account for relative screen size.</p>
+<blockquote>
+<p>The styling is not exactly the same as Unity&rsquo;s but similar. Expect bold fonts to look like normal fonts but with less
+spacing in between compared to Unity&rsquo;s bold style.</p>
+</blockquote>
+<h3 id="factoring-width-and-counting-lines">Factoring Width and Counting Lines</h3>
+<p>Given a dimension, I can find how out how many characters fit within each line of text and the number of lines that a
+that the entire text will take up, <em>naively</em>. The same algorithm used to generate the mesh at its proper position is the
+same algorithm used to calculate how many characters fit within each line. This means that the characters are looped
+twice when the text mesh is being generated to be rendered.</p>
+<h2 id="screen-sizes-and-scale">Screen Sizes and Scale</h2>
+<p>For most of my development purposes, I tend to use the <code>Scale With Screen Space</code> option on the Canvas. This option
+allows you to define a reference resolution, and if the screen size is smaller than the reference resolution, the Canvas
+scales down. Vice versa if the screen size is much larger than the defined reference resolution.</p>
+<p>This follows the same logarithmic scale function Unity&rsquo;s canvas uses.</p>
+<pre><code>log_width  = 2^(log2(width / current_resolution_width))
+log_height = 2^(log2(height / current_resolution_height))
+
+scale = lerp(logWidth, logHeight, a_defined_ratio)
+</code></pre><p>The <code>CanvasScalerSystem</code> only handles scaling when the current resolution does not match the previously known reference
+resolution, which is currently done through an event system.</p>
+<h2 id="events">Events</h2>
+<p>Events are currently done using a producer consumer styled system of entities. A system produces a messaging entity with
+component data that needs to be processed. Due to the detection of that messaging entity with said component, another
+system will process that entity and perform its operations. Finally, the messaging entities are consumed, so that system
+no longer runs.</p>
+<p>This is implemented into the <code>CanvasScalerSystem</code> because the system should only run if the screen resolution changes.</p>
+<blockquote>
+<p>There is an ECS events developed by <a href="https://github.com/jeffvella/UnityEcsEvents/stargazers">jeffvella</a> which builds
+event queues to publish events at runtime.</p>
+</blockquote>
+<h2 id="anchoring">Anchoring</h2>
+<p>Unity&rsquo;s anchoring system works with relative local spaces. This means that the anchor defined in the inspector is relative
+to the current element&rsquo;s parent. See the gif below with a child element that is 150 units away from the upper left hand
+corner of its parent element.</p>
+<p><img src="/images/uguidots/relative-spacing.gif" alt="relative-spacing"></p>
+<p>What gets tricky with anchoring is taking the anchor position relative to its parent and computing the new position of
+the element in a tree like hierarchy. This would be easy if all computed positions are actually applied back to its
+element, but could potentially cause race conditions when doing this in parallel to other systems. To ensure that the
+data is correct for parallel systems, the updates to the elements are pushed to a command buffer for the positions to be
+applied on the next frame.</p>
+<p>This was done by iterating over each root Canvas element and recursively computing each child&rsquo;s new position. The newly
+computed parent&rsquo;s world space position is passed onto its children to compute its current local space position. This
+is similar to how Unity&rsquo;s current anchor system works with relative distances to their parent&rsquo;s position.</p>
+<p><img src="https://raw.githubusercontent.com/InitialPrefabs/UGUIDots.Samples/master/Images/anchoring-ui.gif" alt="scaling"></p>
+<p>Example of Anchoring and Scaling</p>
+<p>Like the <code>CanvasScalerSystem</code> determining the position of the element based on the anchor is done only when the screen
+is resized. (I currently don&rsquo;t see a use in recomputing the anchor outside of a screen resolution change.)</p>
+<h2 id="buttons">Buttons</h2>
+<p>I don&rsquo;t think any UI is really complete without some sort of interactable element. Buttons deviate slightly from how Unity&rsquo;s
+UI typically handles them. The current UI uses serialized Unity events. Write a behavior, drag the behavior into the
+serialized field and select the function that will be executed.</p>
+<p>Currently, in UGUIDOTS, buttons are defined with a few additional options. For instance, you can define the click behavior.
+For most desktop uses, a click behavior of release up makes sense as a click is only registered when the user releases their
+finger from the mouse. However, for mobile it might make sense to have a button type of press down, meaning that the click
+is registered to the button the moment their finger touches the screen. Lastly, there is a held button type, which
+means that a click is continuously registered as long as the button is pressed.</p>
+<p>Now, for the more cumbersome details about buttons are custom behaviors. To implement your own custom behavior for the button,
+you need to author your own message payload. The message payload is a dummy entity that needs to be constructed as a
+template. This follows the same event system that&rsquo;s used in canvas scaling and anchoring system. A <code>ButtonMessageProducerSystem</code>
+will produce a copy of the templated message entity. You would write a system that would process the message entity and
+perform any button logic there. (A more cohesive demo will be coming soon.)</p>
+<blockquote>
+<p>With buttons, only the legacy input system has been supported. The new input system will be supported much later down
+the line.</p>
+</blockquote>
+<h2 id="translation">Translation</h2>
+<p>Translation of elements is supported in a different fashion. The world space matrix and local space matrix do get
+updated, but those do not actually move the mesh. This has been offloaded to a shader which handles translation. To
+ensure that this works, the movable elements <strong>must not be batched</strong>, because the shader will move all vertices of the mesh
+and batched elements have all vertices in the same submesh.</p>
+<blockquote>
+<p>Currently the workflow is a bit cumbersome because the current static analysis workflow is shown as an array of arrays
+without any kidn of tooling to allow you to redefine the batch. (This is something I intend to work on much later down
+the pipeline.)</p>
+</blockquote>
+<p><img src="/images/uguidots/batched-mesh-authoring.jpg" alt="batched-mesh-authoring"></p>
+<h2 id="fill-amounts">Fill Amounts</h2>
+<p>To handle fill amounts, instead of manipulating the mesh like what Unity does, I opted to write a shader with incremental
+clipping support. This means that the mesh does not have to be rebuilt and reuploaded to the GPU as it is no longer
+marked as &ldquo;modified&rdquo; for the next render frame.</p>
+<p>An interesting side effect of opting to use a shader with clipping and stencil masks, is that an image&rsquo;s border
+will not be clipped from rendering so you can see how much fill is applied without any additional background changes.</p>
+<p><img src="https://raw.githubusercontent.com/InitialPrefabs/UGUIDots.Samples/master/Images/shaders.gif" alt="translating-fill"></p>
+<h2 id="putting-this-all-together">Putting this all together</h2>
+<p>Once each elements local vertex data is built, the local vertices are copied into the Canvas' vertex and index buffer. The
+batches that were defined at Editor time now play an important part here. The Canvas entity contains spans which define
+which part of the vertex and index buffer is part of which submesh. Similarly, it contains mappings to state which entities
+belong to which batch. Once the children vertices are consolidated into the root Canvas, the mesh is built and uploaded
+to the GPU.</p>
+<p><img src="/images/uguidots/rendering.gif" alt="rendering"></p>
+<p>You can see how canvases on the right side of the hierarchy are destroyed, as the canvases are converted from their
+GameObject style hierarchy into their entity format.</p>
+<h2 id="in-some-foreseeable-future">In some foreseeable future</h2>
+<p>UGUIDOTS will most likely be maintained to match UGUI&rsquo;s current existing features. As more needs arise in my own game,
+I&rsquo;ll put more updates into UGUIDots. Some of the features I can somewhat expect to develop sometime in the future in
+no particular order are:</p>
+<ul>
+<li>Multiple Graphics Command Buffers</li>
+<li>World space canvases</li>
+<li>Input fields</li>
+<li>Image slicing</li>
+<li>Layout groups</li>
+<li>Radial fill</li>
+<li>Regressively adding tests (make maintenance of the repo easier)</li>
+</ul>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+ 
+ 
+ 
+ window.onload = function () {
+   const header = document.getElementById('post-header');
+   const headerHeight = header.offsetHeight;
+   
+   document.documentElement.style.scrollPaddingTop = headerHeight + 10 + "px";
+ }
+
+ const tocToggleButton = document.getElementById("toc-toggle");
+
+ const tippyInstance = tippy('#toc-toggle', {
+  trigger: 'click',
+  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#how-it-came-to-be\u0022\u003eHow it came to be?\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#why-does-this-happen\u0022\u003eWhy does this happen?\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#the-first-attempt\u0022\u003eThe First Attempt\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#the-second-attempt\u0022\u003eThe Second Attempt\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#batches\u0022\u003eBatches\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#text-text-text\u0022\u003eText, text, text\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#rendering-text\u0022\u003eRendering Text\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#factoring-width-and-counting-lines\u0022\u003eFactoring Width and Counting Lines\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#screen-sizes-and-scale\u0022\u003eScreen Sizes and Scale\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#events\u0022\u003eEvents\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#anchoring\u0022\u003eAnchoring\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#buttons\u0022\u003eButtons\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#translation\u0022\u003eTranslation\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#fill-amounts\u0022\u003eFill Amounts\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#putting-this-all-together\u0022\u003ePutting this all together\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#in-some-foreseeable-future\u0022\u003eIn some foreseeable future\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
+  allowHTML: true,
+  placement: 'bottom-start',
+  interactive: true,
+  arrow: false,
+  maxWidth: "none",
+  onHide: function () { tocToggleButton.classList.remove("hover"); },
+  onShow: function () { tocToggleButton.classList.add("hover"); },
+  onShown: function () {
+    selectTableOfContentsOption();
+
+    if (window.hasSetupTableOfContentsListeners) {
+      return;
+    }
+
+    const tableOfContents = document.getElementById("table-of-contents");
+    tableOfContents.addEventListener('click', function () {
+      
+      tippyInstance[0].hide();
+    });
+
+    window.hasSetupTableOfContentsListeners = true;
+  }
+ });
+
+ function selectTableOfContentsOption () {
+   const optionSelectedClass = 'table-of-contents-option-selected';
+
+   const tableOfContentsOptions = document.querySelectorAll("#table-of-contents > nav > ul li");
+
+   for (const option of tableOfContentsOptions) {
+     
+
+     const [child] = option.children;
+     if (child.tagName.toLowerCase() !== 'a') {
+       continue;
+     }
+
+     if (window.location.href === child.href) {
+       child.classList.add(optionSelectedClass);
+     } else {
+       child.classList.remove(optionSelectedClass);
+     }
+   }
+ }
+
+ window.onhashchange = selectTableOfContentsOption;
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="/js/github-style.js"></script>
+
+
+
+</html>

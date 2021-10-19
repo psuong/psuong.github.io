@@ -5,13 +5,14 @@
     <link>/categories/management/</link>
     <description>Recent content in management on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="/categories/management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ten Months into the Making of Repurposed</title>
-      <link>/blog/ten-months-into-the-making/</link>
+      <link>/archive/blog/ten-months-into-the-making/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/ten-months-into-the-making/</guid>
+      <guid>/archive/blog/ten-months-into-the-making/</guid>
       <description>So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think videos do more justice at the moment instead of me pitching, so here&amp;rsquo;s the actual gameplay video link:
 Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&amp;rsquo;s 2D challenge. But, considering we only had 3 months and the game was very quite large for the scope of the challenge, I turned the game into a much larger vision.</description>
     </item>
