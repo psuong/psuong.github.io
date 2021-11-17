@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/archive/blog/</loc>
+    <loc>https://psuong.github.io/archive/blog/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/work/</loc>
+    <loc>https://psuong.github.io/archive/work/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/page/about/</loc>
+    <loc>https://psuong.github.io/archive/page/about/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/post/initialprefabs/</loc>
+    <loc>https://psuong.github.io/post/initialprefabs/</loc>
+    <lastmod>2021-11-17T11:04:49-05:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/</loc>
+    <lastmod>2021-11-17T11:04:49-05:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/post/</loc>
+    <lastmod>2021-11-17T11:04:49-05:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/readme/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://psuong.github.io/post/thousand-ant/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>https://psuong.github.io/archive/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/readme/</loc>
+    <loc>https://psuong.github.io/categories/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/post/thousand-ant/</loc>
+    <loc>https://psuong.github.io/archive/work/games/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/</loc>
+    <loc>https://psuong.github.io/tags/games/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://psuong.github.io/categories/games/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/work/games/</loc>
+    <loc>https://psuong.github.io/tags/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/games/</loc>
+    <loc>https://psuong.github.io/categories/gamedev/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/games/</loc>
+    <loc>https://psuong.github.io/archive/work/thousandant/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://psuong.github.io/categories/videos/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/gamedev/</loc>
+    <loc>https://psuong.github.io/tags/graphics/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/work/thousandant/</loc>
+    <loc>https://psuong.github.io/categories/graphics/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/videos/</loc>
+    <loc>https://psuong.github.io/tags/rust/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/graphics/</loc>
+    <loc>https://psuong.github.io/categories/rust/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/graphics/</loc>
+    <loc>https://psuong.github.io/archive/blog/vulcan-rust-part-1/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/rust/</loc>
+    <loc>https://psuong.github.io/tags/vulkan/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/rust/</loc>
+    <loc>https://psuong.github.io/categories/vulkan/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/blog/vulcan-rust-part-1/</loc>
+    <loc>https://psuong.github.io/tags/dod/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/vulkan/</loc>
+    <loc>https://psuong.github.io/categories/dod/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/vulkan/</loc>
+    <loc>https://psuong.github.io/tags/ecs/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/dod/</loc>
+    <loc>https://psuong.github.io/categories/ecs/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/dod/</loc>
+    <loc>https://psuong.github.io/archive/blog/making-of-uguidots/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/ecs/</loc>
+    <loc>https://psuong.github.io/tags/ai/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/ecs/</loc>
+    <loc>https://psuong.github.io/categories/ai/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/blog/making-of-uguidots/</loc>
+    <loc>https://psuong.github.io/archive/work/dani-ai/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/ai/</loc>
+    <loc>https://psuong.github.io/archive/work/uguidots/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/ai/</loc>
+    <loc>https://psuong.github.io/tags/ui/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/work/dani-ai/</loc>
+    <loc>https://psuong.github.io/categories/ui/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/work/uguidots/</loc>
+    <loc>https://psuong.github.io/categories/management/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/ui/</loc>
+    <loc>https://psuong.github.io/tags/planning/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/ui/</loc>
+    <loc>https://psuong.github.io/archive/blog/ten-months-into-the-making/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/categories/management/</loc>
+    <loc>https://psuong.github.io/tags/apis/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/planning/</loc>
+    <loc>https://psuong.github.io/categories/infrastructure/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/archive/blog/ten-months-into-the-making/</loc>
+    <loc>https://psuong.github.io/archive/blog/low-level-apis/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/apis/</loc>
-    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
-  </url><url>
-    <loc>/categories/infrastructure/</loc>
-    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
-  </url><url>
-    <loc>/archive/blog/low-level-apis/</loc>
-    <lastmod>2021-10-18T23:38:03-04:00</lastmod>
-  </url><url>
-    <loc>/archive/authors/</loc>
+    <loc>https://psuong.github.io/archive/authors/</loc>
     <lastmod>2021-10-18T23:38:03-04:00</lastmod>
   </url>
 </urlset>

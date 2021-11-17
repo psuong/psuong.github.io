@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dod on Porrith Suong</title>
-    <link>/categories/dod/</link>
+    <link>https://psuong.github.io/categories/dod/</link>
     <description>Recent content in dod on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/dod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/categories/dod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UGUIDots Progress Report</title>
-      <link>/archive/blog/making-of-uguidots/</link>
+      <link>https://psuong.github.io/archive/blog/making-of-uguidots/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/archive/blog/making-of-uguidots/</guid>
+      <guid>https://psuong.github.io/archive/blog/making-of-uguidots/</guid>
       <description>UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
  While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline.</description>
     </item>

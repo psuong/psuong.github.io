@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ui on Porrith Suong</title>
-    <link>/categories/ui/</link>
+    <link>https://psuong.github.io/categories/ui/</link>
     <description>Recent content in ui on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/ui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/categories/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UGUIDots</title>
-      <link>/archive/work/uguidots/</link>
+      <link>https://psuong.github.io/archive/work/uguidots/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/archive/work/uguidots/</guid>
+      <guid>https://psuong.github.io/archive/work/uguidots/</guid>
       <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.
 Currently, the only features supported are:
  Simple image rendering Text rendering Render orders Static Analysis for batching Button States  Button closing   Image Effects interfaced with Universal Render Pipeline Shaders Scaling &amp;amp; Anchoring Text support through char pointers  Github Link</description>

@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Porrith Suong</title>
-    <link>/archive/blog/</link>
+    <link>https://psuong.github.io/archive/blog/</link>
     <description>Recent content in Blog on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/archive/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://psuong.github.io/archive/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting with Vulkan and Rust</title>
-      <link>/archive/blog/vulcan-rust-part-1/</link>
+      <link>https://psuong.github.io/archive/blog/vulcan-rust-part-1/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/archive/blog/vulcan-rust-part-1/</guid>
+      <guid>https://psuong.github.io/archive/blog/vulcan-rust-part-1/</guid>
       <description>So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C++ and Vulkan, but I&amp;rsquo;d like to start recreating that previous C++ Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
 The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series.</description>
     </item>
     
     <item>
       <title>UGUIDots Progress Report</title>
-      <link>/archive/blog/making-of-uguidots/</link>
+      <link>https://psuong.github.io/archive/blog/making-of-uguidots/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/archive/blog/making-of-uguidots/</guid>
+      <guid>https://psuong.github.io/archive/blog/making-of-uguidots/</guid>
       <description>UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
  While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline.</description>
     </item>
     
     <item>
       <title>Ten Months into the Making of Repurposed</title>
-      <link>/archive/blog/ten-months-into-the-making/</link>
+      <link>https://psuong.github.io/archive/blog/ten-months-into-the-making/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/archive/blog/ten-months-into-the-making/</guid>
+      <guid>https://psuong.github.io/archive/blog/ten-months-into-the-making/</guid>
       <description>So just a bit of background information, Repurposed is a 2D action arena game with heavy card game elements. I think videos do more justice at the moment instead of me pitching, so here&amp;rsquo;s the actual gameplay video link:
 Around ten months ago, October of 2018, I prototyped a game idea on Google Slides on how I wanted people to play the game, and entered it into Unity&amp;rsquo;s 2D challenge. But, considering we only had 3 months and the game was very quite large for the scope of the challenge, I turned the game into a much larger vision.</description>
     </item>
     
     <item>
       <title>Scaffolding in Development</title>
-      <link>/archive/blog/low-level-apis/</link>
+      <link>https://psuong.github.io/archive/blog/low-level-apis/</link>
       <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/archive/blog/low-level-apis/</guid>
+      <guid>https://psuong.github.io/archive/blog/low-level-apis/</guid>
       <description>So I preferably enjoy working with low level APIs instead of high level APIs. The main reason behind that is the amount of control I have as a developer, especially on creating the functionality I need. So if there is an alternative API which provides a lower level solution than a high level API which does exactly what I need&amp;hellip;
 I would still go for the lower level solution, even if I have to recreate the same functionality as the high level API.</description>
     </item>

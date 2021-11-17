@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Porrith Suong</title>
-    <link>/archive/authors/</link>
+    <link>https://psuong.github.io/archive/authors/</link>
     <description>Recent content in Authors on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/archive/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://psuong.github.io/archive/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

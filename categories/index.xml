@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Porrith Suong</title>
-    <link>/categories/</link>
+    <link>https://psuong.github.io/categories/</link>
     <description>Recent content in Categories on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>games</title>
-      <link>/categories/games/</link>
+      <link>https://psuong.github.io/categories/games/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/games/</guid>
+      <guid>https://psuong.github.io/categories/games/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gamedev</title>
-      <link>/categories/gamedev/</link>
+      <link>https://psuong.github.io/categories/gamedev/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/gamedev/</guid>
+      <guid>https://psuong.github.io/categories/gamedev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>videos</title>
-      <link>/categories/videos/</link>
+      <link>https://psuong.github.io/categories/videos/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/videos/</guid>
+      <guid>https://psuong.github.io/categories/videos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>graphics</title>
-      <link>/categories/graphics/</link>
+      <link>https://psuong.github.io/categories/graphics/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/graphics/</guid>
+      <guid>https://psuong.github.io/categories/graphics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rust</title>
-      <link>/categories/rust/</link>
+      <link>https://psuong.github.io/categories/rust/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/rust/</guid>
+      <guid>https://psuong.github.io/categories/rust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vulkan</title>
-      <link>/categories/vulkan/</link>
+      <link>https://psuong.github.io/categories/vulkan/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/vulkan/</guid>
+      <guid>https://psuong.github.io/categories/vulkan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dod</title>
-      <link>/categories/dod/</link>
+      <link>https://psuong.github.io/categories/dod/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/dod/</guid>
+      <guid>https://psuong.github.io/categories/dod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ecs</title>
-      <link>/categories/ecs/</link>
+      <link>https://psuong.github.io/categories/ecs/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ecs/</guid>
+      <guid>https://psuong.github.io/categories/ecs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ai</title>
-      <link>/categories/ai/</link>
+      <link>https://psuong.github.io/categories/ai/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ai/</guid>
+      <guid>https://psuong.github.io/categories/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ui</title>
-      <link>/categories/ui/</link>
+      <link>https://psuong.github.io/categories/ui/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ui/</guid>
+      <guid>https://psuong.github.io/categories/ui/</guid>
       <description></description>
     </item>
     
     <item>
       <title>management</title>
-      <link>/categories/management/</link>
+      <link>https://psuong.github.io/categories/management/</link>
       <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/management/</guid>
+      <guid>https://psuong.github.io/categories/management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>infrastructure</title>
-      <link>/categories/infrastructure/</link>
+      <link>https://psuong.github.io/categories/infrastructure/</link>
       <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/infrastructure/</guid>
+      <guid>https://psuong.github.io/categories/infrastructure/</guid>
       <description></description>
     </item>
     

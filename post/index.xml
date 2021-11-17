@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Porrith Suong</title>
-    <link>/post/</link>
+    <link>https://psuong.github.io/post/</link>
     <description>Recent content in Posts on Porrith Suong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>InitialPrefabs</title>
-      <link>/post/initialprefabs/</link>
+      <link>https://psuong.github.io/post/initialprefabs/</link>
       <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/initialprefabs/</guid>
+      <guid>https://psuong.github.io/post/initialprefabs/</guid>
       <description>The consulting work I do at initialPrefabs</description>
     </item>
     
     <item>
       <title>Thousand Ant Work</title>
-      <link>/post/thousand-ant/</link>
+      <link>https://psuong.github.io/post/thousand-ant/</link>
       <pubDate>Tue, 12 Oct 2021 19:57:02 -0400</pubDate>
       
-      <guid>/post/thousand-ant/</guid>
+      <guid>https://psuong.github.io/post/thousand-ant/</guid>
       <description>Things I&amp;rsquo;ve worked on at Thousand Ant</description>
     </item>
     
