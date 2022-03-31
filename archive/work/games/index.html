@@ -126,8 +126,6 @@ Table of Contents  Released  Kitty in the Box 2 Emissary the Sunsets the Self Ba
   </header>
 </div>
   
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
 <div>
   <main>
     <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
@@ -167,16 +165,22 @@ Table of Contents  Released  Kitty in the Box 2 Emissary the Sunsets the Self Ba
         <div>
           <div class="js-gist-file-update-container js-task-list-container file-box">
             <div id="file-pytest" class="file my-2">
-              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
                 <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
                   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
                     
-                    <summary id="toc-toggle" class="btn btn-octicon m-0 mr-2 p-2" aria-haspopup="menu" aria-label="Table of Contents" role="button">
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
                       <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
                         <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
                       </svg>
                     </summary>
-                          635 Words
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      635 Words
                     
 
                   </div>
@@ -198,7 +202,7 @@ Table of Contents  Released  Kitty in the Box 2 Emissary the Sunsets the Self Ba
               </div>
 
 
-              <div class="Box-body px-5 pb-5">
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><p>Here are some of the games I&rsquo;ve worked on over the past few years!</p>
 <h1 id="table-of-contents">Table of Contents</h1>
 <ul>
@@ -302,68 +306,15 @@ the navigational sampling system such that Sushi would always jump on valid surf
     </div>
   </main>
 </div>
-<script>
- 
- 
- 
- window.onload = function () {
-   const header = document.getElementById('post-header');
-   const headerHeight = header.offsetHeight;
-   
-   document.documentElement.style.scrollPaddingTop = headerHeight + 10 + "px";
- }
+<script type="application/javascript" src='https://psuong.github.io/js/toc.js'></script>
+<link rel="stylesheet" href='https://psuong.github.io/css/toc.css' />
 
- const tocToggleButton = document.getElementById("toc-toggle");
-
- const tippyInstance = tippy('#toc-toggle', {
-  trigger: 'click',
-  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#kitty-in-the-box\u0022\u003eKitty in the Box 2 (Released, Mobile)\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#emissary\u0022\u003eEmissary the Sunsets the Self (Released)\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#bob\u0022\u003eBag of Beliefs (Released)\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#kart\u0022\u003eKart Microgame (Released)\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#kfk\u0022\u003eKung Fu Kickball (Released)\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#cells\u0022\u003eCell to Singularity\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#inwards\u0022\u003eInwards VR\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#gestalt\u0022\u003eGestalt Steam \u0026amp; Cinder\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#kittyvr\u0022\u003eKitty in the Box VR\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
-  allowHTML: true,
-  placement: 'bottom-start',
-  interactive: true,
-  arrow: false,
-  maxWidth: "none",
-  onHide: function () { tocToggleButton.classList.remove("hover"); },
-  onShow: function () { tocToggleButton.classList.add("hover"); },
-  onShown: function () {
-    selectTableOfContentsOption();
-
-    if (window.hasSetupTableOfContentsListeners) {
-      return;
-    }
-
-    const tableOfContents = document.getElementById("table-of-contents");
-    tableOfContents.addEventListener('click', function () {
-      
-      tippyInstance[0].hide();
-    });
-
-    window.hasSetupTableOfContentsListeners = true;
-  }
- });
-
- function selectTableOfContentsOption () {
-   const optionSelectedClass = 'table-of-contents-option-selected';
-
-   const tableOfContentsOptions = document.querySelectorAll("#table-of-contents > nav > ul li");
-
-   for (const option of tableOfContentsOptions) {
-     
-
-     const [child] = option.children;
-     if (child.tagName.toLowerCase() !== 'a') {
-       continue;
-     }
-
-     if (window.location.href === child.href) {
-       child.classList.add(optionSelectedClass);
-     } else {
-       child.classList.remove(optionSelectedClass);
-     }
-   }
- }
-
- window.onhashchange = selectTableOfContentsOption;
+<script src="https://utteranc.es/client.js"
+    repo="psuong/psuong.github.io"
+    issue-term="pathname"
+    theme="preferred-color-scheme"
+    crossorigin="anonymous"
+    async>
 </script>
 
 

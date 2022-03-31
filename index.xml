@@ -128,5 +128,14 @@ Around ten months ago, October of 2018, I prototyped a game idea on Google Slide
 I would still go for the lower level solution, even if I have to recreate the same functionality as the high level API.</description>
     </item>
     
+    <item>
+      <title>Scaffolding in Development</title>
+      <link>https://psuong.github.io/post/scaffolding-in-development/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://psuong.github.io/post/scaffolding-in-development/</guid>
+      <description>Thoughts on development</description>
+    </item>
+    
   </channel>
 </rss>
