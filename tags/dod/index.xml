@@ -14,7 +14,7 @@
       
       <guid>https://psuong.github.io/archive/blog/making-of-uguidots/</guid>
       <description>UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
- While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline.</description>
+While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline.</description>
     </item>
     
   </channel>

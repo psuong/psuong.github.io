@@ -19,7 +19,7 @@
     
     <meta name="description"
   content="UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
- While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
+While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
@@ -30,7 +30,7 @@
 <meta name="twitter:title" content="UGUIDots Progress Report - Porrith Suong" />
 <meta name="twitter:description"
   content="UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
- While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
+While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
 <meta name="twitter:site" content="https://psuong.github.io" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -41,7 +41,7 @@
 <meta property="og:title" content="UGUIDots Progress Report - Porrith Suong">
 <meta property="og:description"
   content="UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).
- While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
+While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline." />
 <meta property="og:url" content="https://psuong.github.io/archive/blog/making-of-uguidots/" />
 <meta property="og:site_name" content="UGUIDots Progress Report" />
 <meta property="og:image"
@@ -312,7 +312,7 @@ twice when the text mesh is being generated to be rendered.</p>
 allows you to define a reference resolution, and if the screen size is smaller than the reference resolution, the Canvas
 scales down. Vice versa if the screen size is much larger than the defined reference resolution.</p>
 <p>This follows the same logarithmic scale function Unity&rsquo;s canvas uses.</p>
-<pre><code>log_width  = 2^(log2(width / current_resolution_width))
+<pre tabindex="0"><code>log_width  = 2^(log2(width / current_resolution_width))
 log_height = 2^(log2(height / current_resolution_height))
 
 scale = lerp(logWidth, logHeight, a_defined_ratio)
@@ -382,7 +382,7 @@ marked as &ldquo;modified&rdquo; for the next render frame.</p>
 will not be clipped from rendering so you can see how much fill is applied without any additional background changes.</p>
 <p><img src="https://raw.githubusercontent.com/InitialPrefabs/UGUIDots.Samples/master/Images/shaders.gif" alt="translating-fill"></p>
 <h2 id="putting-this-all-together">Putting this all together</h2>
-<p>Once each elements local vertex data is built, the local vertices are copied into the Canvas' vertex and index buffer. The
+<p>Once each elements local vertex data is built, the local vertices are copied into the Canvas&rsquo; vertex and index buffer. The
 batches that were defined at Editor time now play an important part here. The Canvas entity contains spans which define
 which part of the vertex and index buffer is part of which submesh. Similarly, it contains mappings to state which entities
 belong to which batch. Once the children vertices are consolidated into the root Canvas, the mesh is built and uploaded
