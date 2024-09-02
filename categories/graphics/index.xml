@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>graphics on Porrith Suong</title>
+    <title>Graphics on Porrith Suong</title>
     <link>https://psuong.github.io/categories/graphics/</link>
-    <description>Recent content in graphics on Porrith Suong</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Graphics on Porrith Suong</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/categories/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2024 18:57:08 -0400</lastBuildDate>
+    <atom:link href="https://psuong.github.io/categories/graphics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting with Vulkan and Rust</title>
       <link>https://psuong.github.io/archive/blog/vulcan-rust-part-1/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://psuong.github.io/archive/blog/vulcan-rust-part-1/</guid>
-      <description>So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C++ and Vulkan, but I&amp;rsquo;d like to start recreating that previous C++ Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.
-The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series.</description>
+      <description>So I&amp;rsquo;ve always wanted to learn Rust and Vulkan together. I&amp;rsquo;ve done a bit of it before using C++ and Vulkan, but I&amp;rsquo;d like to start recreating that previous C++ Vulkan Renderer with Rust. So in these series of blog posts - I&amp;rsquo;ll write some public notes on Rust and how it is interfaced with the Vulkan ash crate.&#xA;The implementation of Vulkan will primarily be based on this tutorial. This blog post will cover the Instance section of the tutorial series.</description>
     </item>
-    
   </channel>
 </rss>
