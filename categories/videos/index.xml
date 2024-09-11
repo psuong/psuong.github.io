@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Videos on Porrith Suong</title>
+    <title>videos on Porrith Suong</title>
     <link>https://psuong.github.io/categories/videos/</link>
-    <description>Recent content in Videos on Porrith Suong</description>
-    <generator>Hugo</generator>
+    <description>Recent content in videos on Porrith Suong</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2024 18:57:08 -0400</lastBuildDate>
-    <atom:link href="https://psuong.github.io/categories/videos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/categories/videos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thousand Ant</title>
       <link>https://psuong.github.io/archive/work/thousandant/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/archive/work/thousandant/</guid>
-      <description>Table of Contents Thousand Ant Flocking With the C# Job System C# Job System: Using DOTs with Managed C# APIs Unity Technologies Kart Microgame Open Projects Devlg Bolt Adaptive Performance Physics Optimizations Shader Graph UI Toolkit Scriptable Objects ML Agents Device Simulator Genvid Technologies I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.&#xA;Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.</description>
+      <description>Table of Contents Thousand Ant Flocking With the C# Job System C# Job System: Using DOTs with Managed C# APIs Unity Technologies Kart Microgame Open Projects Devlg Bolt Adaptive Performance Physics Optimizations Shader Graph UI Toolkit Scriptable Objects ML Agents Device Simulator Genvid Technologies I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.
+Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.</description>
     </item>
+    
   </channel>
 </rss>

@@ -4,37 +4,44 @@
     <title>Posts on Porrith Suong</title>
     <link>https://psuong.github.io/post/</link>
     <description>Recent content in Posts on Porrith Suong</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Sep 2024 09:00:25 -0400</lastBuildDate>
-    <atom:link href="https://psuong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decoy Games, LLC</title>
       <link>https://psuong.github.io/post/decoygames/</link>
       <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/post/decoygames/</guid>
       <description>The work I have done @ Decoy Games, LLC</description>
     </item>
+    
     <item>
       <title>InitialPrefabs</title>
       <link>https://psuong.github.io/post/initialprefabs/</link>
       <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/post/initialprefabs/</guid>
       <description>The consulting work I do at initialPrefabs</description>
     </item>
+    
     <item>
       <title>Thousand Ant Work</title>
       <link>https://psuong.github.io/post/thousand-ant/</link>
       <pubDate>Tue, 12 Oct 2021 19:57:02 -0400</pubDate>
+      
       <guid>https://psuong.github.io/post/thousand-ant/</guid>
       <description>Things I&amp;rsquo;ve worked on at Thousand Ant</description>
     </item>
+    
     <item>
       <title>Scaffolding in Development</title>
       <link>https://psuong.github.io/post/scaffolding-in-development/</link>
       <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/post/scaffolding-in-development/</guid>
       <description>Thoughts on development</description>
     </item>
+    
   </channel>
 </rss>

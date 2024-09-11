@@ -4,36 +4,50 @@
     <title>Work on Porrith Suong</title>
     <link>https://psuong.github.io/archive/work/</link>
     <description>Recent content in Work on Porrith Suong</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://psuong.github.io/archive/work/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://psuong.github.io/archive/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Games</title>
       <link>https://psuong.github.io/archive/work/games/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/archive/work/games/</guid>
-      <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!&#xA;Table of Contents Released Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball Cell To Singularity Not Released Inwards Gestalt: Steam &amp;amp; Cinder Kitty in the Box VR Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
+      <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!
+Table of Contents Released Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball Cell To Singularity Not Released Inwards Gestalt: Steam &amp;amp; Cinder Kitty in the Box VR Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
     </item>
+    
     <item>
       <title>Thousand Ant</title>
       <link>https://psuong.github.io/archive/work/thousandant/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/archive/work/thousandant/</guid>
-      <description>Table of Contents Thousand Ant Flocking With the C# Job System C# Job System: Using DOTs with Managed C# APIs Unity Technologies Kart Microgame Open Projects Devlg Bolt Adaptive Performance Physics Optimizations Shader Graph UI Toolkit Scriptable Objects ML Agents Device Simulator Genvid Technologies I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.&#xA;Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.</description>
+      <description>Table of Contents Thousand Ant Flocking With the C# Job System C# Job System: Using DOTs with Managed C# APIs Unity Technologies Kart Microgame Open Projects Devlg Bolt Adaptive Performance Physics Optimizations Shader Graph UI Toolkit Scriptable Objects ML Agents Device Simulator Genvid Technologies I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.
+Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.</description>
     </item>
+    
     <item>
       <title>DANI AI</title>
       <link>https://psuong.github.io/archive/work/dani-ai/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/archive/work/dani-ai/</guid>
-      <description>Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI follows a neural network like schema and attempts to treat each agent as an organism with senses that update in realtime.&#xA;Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series of authored actions from the user.&#xA;You can grab it here on the Asset Store.</description>
+      <description>Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI follows a neural network like schema and attempts to treat each agent as an organism with senses that update in realtime.
+Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series of authored actions from the user.
+You can grab it here on the Asset Store.</description>
     </item>
+    
     <item>
       <title>UGUIDots</title>
       <link>https://psuong.github.io/archive/work/uguidots/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>https://psuong.github.io/archive/work/uguidots/</guid>
-      <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.&#xA;Currently, the only features supported are:&#xA;Simple image rendering Text rendering Render orders Static Analysis for batching Button States Button closing Image Effects interfaced with Universal Render Pipeline Shaders Scaling &amp;amp; Anchoring Text support through char pointers Github Link&#xA;Preview </description>
+      <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.
+Currently, the only features supported are:
+Simple image rendering Text rendering Render orders Static Analysis for batching Button States Button closing Image Effects interfaced with Universal Render Pipeline Shaders Scaling &amp;amp; Anchoring Text support through char pointers Github Link
+Preview </description>
     </item>
+    
   </channel>
 </rss>

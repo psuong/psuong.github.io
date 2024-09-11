@@ -4,8 +4,7 @@
     <title>Authors on Porrith Suong</title>
     <link>https://psuong.github.io/archive/authors/</link>
     <description>Recent content in Authors on Porrith Suong</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://psuong.github.io/archive/authors/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://psuong.github.io/archive/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
