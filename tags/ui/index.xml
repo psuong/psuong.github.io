@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ui on Porrith Suong</title>
+    <title>Ui on Porrith Suong</title>
     <link>https://psuong.github.io/tags/ui/</link>
-    <description>Recent content in ui on Porrith Suong</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Ui on Porrith Suong</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Oct 2024 20:01:30 -0400</lastBuildDate>
+    <atom:link href="https://psuong.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>UGUIDots</title>
+      <title>NimGui Brief</title>
+      <link>https://psuong.github.io/post/nimgui/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/post/nimgui/</guid>
+      <description>NimGui, a 1 draw call ImGui for Unity</description>
+    </item>
+    <item>
+      <title>UGUIDOTS</title>
       <link>https://psuong.github.io/archive/work/uguidots/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://psuong.github.io/archive/work/uguidots/</guid>
-      <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.
-Currently, the only features supported are:
-Simple image rendering Text rendering Render orders Static Analysis for batching Button States Button closing Image Effects interfaced with Universal Render Pipeline Shaders Scaling &amp;amp; Anchoring Text support through char pointers Github Link
-Preview </description>
+      <description>UGUIDots is an on going project to convert Unity&amp;rsquo;s default UI to a data oriented compliant system. The system is meant to augment on top of Unity&amp;rsquo;s UI.&#xA;Currently, the only features supported are:&#xA;Simple image rendering Text rendering Render orders Static Analysis for batching Button States Button closing Image Effects interfaced with Universal Render Pipeline Shaders Scaling &amp;amp; Anchoring Text support through char pointers Github Link&#xA;Preview </description>
     </item>
-    
   </channel>
 </rss>

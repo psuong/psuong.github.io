@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>games on Porrith Suong</title>
+    <title>Games on Porrith Suong</title>
     <link>https://psuong.github.io/tags/games/</link>
-    <description>Recent content in games on Porrith Suong</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Games on Porrith Suong</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://psuong.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Oct 2024 20:00:59 -0400</lastBuildDate>
+    <atom:link href="https://psuong.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Games</title>
       <link>https://psuong.github.io/archive/work/games/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://psuong.github.io/archive/work/games/</guid>
-      <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!
-Table of Contents Released Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball Cell To Singularity Not Released Inwards Gestalt: Steam &amp;amp; Cinder Kitty in the Box VR Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
+      <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!&#xA;Table of Contents Released Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball Cell To Singularity Not Released Inwards Gestalt: Steam &amp;amp; Cinder Kitty in the Box VR Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
     </item>
-    
   </channel>
 </rss>

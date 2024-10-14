@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on Porrith Suong</title>
+    <link>https://psuong.github.io/categories/work/</link>
+    <description>Recent content in Work on Porrith Suong</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Oct 2024 20:01:48 -0400</lastBuildDate>
+    <atom:link href="https://psuong.github.io/categories/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decoy Games, LLC</title>
+      <link>https://psuong.github.io/post/decoygames/</link>
+      <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/post/decoygames/</guid>
+      <description>The work I have done @ Decoy Games, LLC</description>
+    </item>
+    <item>
+      <title>InitialPrefabs</title>
+      <link>https://psuong.github.io/post/initialprefabs/</link>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/post/initialprefabs/</guid>
+      <description>The consulting work I do at initialPrefabs</description>
+    </item>
+    <item>
+      <title>Thousand Ant Work</title>
+      <link>https://psuong.github.io/post/thousand-ant/</link>
+      <pubDate>Tue, 12 Oct 2021 19:57:02 -0400</pubDate>
+      <guid>https://psuong.github.io/post/thousand-ant/</guid>
+      <description>Things I&amp;rsquo;ve worked on at Thousand Ant</description>
+    </item>
+    <item>
+      <title>Games</title>
+      <link>https://psuong.github.io/archive/work/games/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/archive/work/games/</guid>
+      <description>Here are some of the games I&amp;rsquo;ve worked on over the past few years!&#xA;Table of Contents Released Kitty in the Box 2 Emissary the Sunsets the Self Bag of Beliefs Kart Microgame Kung Fu Kickball Cell To Singularity Not Released Inwards Gestalt: Steam &amp;amp; Cinder Kitty in the Box VR Released Kitty in the Box 2 (Released, Mobile) Kitty in the Box 2 is a mobile game where you aid, Sushi our lovable cat, jump into boxes.</description>
+    </item>
+    <item>
+      <title>Thousand Ant</title>
+      <link>https://psuong.github.io/archive/work/thousandant/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/archive/work/thousandant/</guid>
+      <description>Table of Contents Thousand Ant Flocking With the C# Job System C# Job System: Using DOTs with Managed C# APIs Unity Technologies Kart Microgame Open Projects Devlg Bolt Adaptive Performance Physics Optimizations Shader Graph UI Toolkit Scriptable Objects ML Agents Device Simulator Genvid Technologies I work with Thousand Ant and create educational videos/technical scripts to explain new tech and features for their end users.&#xA;Thousand Ant At Thousand Ant, I had the opportunity to create technical demos demoing some techniques game developers can use in their games with Unity.</description>
+    </item>
+  </channel>
+</rss>
