@@ -13,7 +13,7 @@
       <link>https://psuong.github.io/archive/work/dani-ai/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://psuong.github.io/archive/work/dani-ai/</guid>
-      <description>Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI follows a neural network like schema and attempts to treat each agent as an organism with senses that update in realtime.&#xA;Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series of authored actions from the user.&#xA;You can grab it here on the Asset Store.</description>
+      <description>&lt;p&gt;Dani AI is a node based editor to help design and prototype AI in Unity. Each AI designed and built using Dani AI&#xA;follows a neural network like schema and attempts to treat each agent as an organism with senses that update in&#xA;realtime.&lt;/p&gt;&#xA;&lt;p&gt;Senses provide natural information about the simulated world and hook into decisions, where the agent executes a series&#xA;of authored actions from the user.&lt;/p&gt;&#xA;&lt;p&gt;You can grab it here on the &lt;a href=&#34;https://assetstore.unity.com/packages/tools/ai/dani-ai-108309&#34;&gt;Asset Store&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

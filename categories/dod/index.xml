@@ -13,7 +13,7 @@
       <link>https://psuong.github.io/archive/blog/making-of-uguidots/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://psuong.github.io/archive/blog/making-of-uguidots/</guid>
-      <description>UGUIDOTS is a data oriented workflow of Unity default runtime UI, UGUI. This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).&#xA;While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and have a good understanding of the UI Pipeline.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/InitialPrefabs/UGUIDots&#34;&gt;UGUIDOTS&lt;/a&gt; is a data oriented workflow of Unity default runtime UI, UGUI.&#xA;This provides a conversion workflow to convert the authored GameObject UI to a more DOTS friendly UI system, that works&#xA;with their Universal Render Pipeline (formerly known as Lightweight Render Pipeline).&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;While UIElements certainly scales better and a DOTS version is in the works, I wanted to solve my current issues and&#xA;have a good understanding of the UI Pipeline.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

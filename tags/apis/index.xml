@@ -13,7 +13,7 @@
       <link>https://psuong.github.io/archive/blog/low-level-apis/</link>
       <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
       <guid>https://psuong.github.io/archive/blog/low-level-apis/</guid>
-      <description>So I preferably enjoy working with low level APIs instead of high level APIs. The main reason behind that is the amount of control I have as a developer, especially on creating the functionality I need. So if there is an alternative API which provides a lower level solution than a high level API which does exactly what I need&amp;hellip;&#xA;I would still go for the lower level solution, even if I have to recreate the same functionality as the high level API.</description>
+      <description>&lt;p&gt;So I preferably enjoy working with low level APIs instead of high level APIs. The main reason behind that is the&#xA;amount of control I have as a developer, especially on creating the functionality I need. So if there is an alternative&#xA;API which provides a lower level solution than a high level API which does exactly what I need&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I would still go for the lower level solution, even if I have to recreate the same functionality as the high level API.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
