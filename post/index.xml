@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Porrith Suong</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Oct 2024 20:35:48 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2025 09:20:36 -0500</lastBuildDate>
     <atom:link href="https://psuong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimal Vulkan Template</title>
+      <link>https://psuong.github.io/post/minimal-vulkan-template/</link>
+      <pubDate>Wed, 19 Feb 2025 08:40:02 -0500</pubDate>
+      <guid>https://psuong.github.io/post/minimal-vulkan-template/</guid>
+      <description>&lt;p&gt;Not too long ago, I read Sebastian&amp;rsquo;s blog post, &lt;a href=&#34;https://blog.s-schoener.com/2025-02-03-programming-friction/&#34;&gt;Programming Without Friction&lt;/a&gt;&#xA;and I was also in the need to try and practice Vulkan. In the same fashion, I started building out my own finance tool&#xA;using &lt;a href=&#34;https://www.egui.rs/&#34;&gt;egui&lt;/a&gt;, &lt;a href=&#34;https://github.com/rust-windowing/winit&#34;&gt;winit&lt;/a&gt;, and &lt;a href=&#34;https://github.com/ash-rs/ash&#34;&gt;vulkan-ash&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I have had some experience trying to build out a vulkan app in &lt;a href=&#34;https://github.com/psuong/VulkanRendering&#34;&gt;C++&lt;/a&gt; first&#xA;and through my attempts of my own game &lt;a href=&#34;https://github.com/psuong/geometroid&#34;&gt;engine&lt;/a&gt;, but that effort is&#xA;inconsistent due to the usual reasons of life. &lt;em&gt;So&lt;/em&gt;, I needed something with smaller effort and started to&#xA;work on my own opiniated CSV editor for my own finance. While Google Sheets, LibreOffice Calc, Excel&#xA;all exist and &lt;em&gt;works&lt;/em&gt;, it won&amp;rsquo;t fit my need of building something small and getting more comfortable rewriting&#xA;Vulkan code.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>InitialPrefabs Open Source</title>
       <link>https://psuong.github.io/post/initialprefabs-open-source/</link>
