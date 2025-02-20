@@ -1,0 +1,4 @@
+baseURL = 'https://psuong.github.io/'
+languageCode = 'en-us'
+title = 'Personal Portfolio'
+theme = 'github-style'
