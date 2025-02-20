@@ -6,25 +6,26 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  author          = "Porrith Suong"
-  description     = "Posts are not commits on this site! Made with github-style hugo theme (via MeiK)"
-  github          = "psuong"
-  twitter         = "PorrithSuong"
-  linkedin        = "PorrithSuong"
-  email           = "porrith.suong@gmail.com"
-  url             = "https://psuong.github.io"
-  keywords        = "blog, portfolio"
-  rss             = true
-  lastmod         = true
-  location        = "Brooklyn"
-  userStatusEmoji = "😀"
-  favicon         = "/images/github.png"
-  avatar          = "/images/avatar.png"
-  headerIcon      = "/images/github-mark-white.png"
-  utterancesRepo  = "psuong/psuong.github.io"
+author = "Porrith Suong"
+description = "Posts are not commits on this site! Made with github-style hugo theme (via MeiK)"
+github = "psuong"
+mastodon = "@psuong"
+bluesky = "itsjustblank.bsky.social"
+linkedin = "PorrithSuong"
+email = "porrith.suong@proton.me"
+url = "https://psuong.github.io"
+keywords = "blog, portfolio"
+rss = true
+lastmod = true
+location = "Brooklyn"
+userStatusEmoji = "😀"
+favicon = "/images/github.png"
+avatar = "/images/avatar.png"
+headerIcon = "/images/github-mark-white.png"
+utterancesRepo = "psuong/psuong.github.io"
 
 [frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [markup.goldmark.renderer]
 unsafe = true
