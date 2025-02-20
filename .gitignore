@@ -1,5 +1,1 @@
-### Vim ###
-*.swp
-
-### OSX ###
-*.DS_Store
+/public
