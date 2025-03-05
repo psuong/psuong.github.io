@@ -2,6 +2,7 @@
 title: "Render Graph Part 1 of Many"
 date: 2022-12-24T18:23:53-05:00
 draft: true
+summary: "Building a render graph in Unity"
 ---
 
 For sometime, Unity has been working on a RenderGraph API, which is an abstraction on top of SRP

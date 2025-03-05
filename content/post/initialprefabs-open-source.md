@@ -2,12 +2,9 @@
 title: "InitialPrefabs Open Source"
 date: 2024-10-13T19:57:14-04:00
 draft: false
-
-categories:
-  - opensource
-  - tools
 tags:
   - tools
+  - gui
 
 summary: "Some of the works I've done that are open sourced"
 ---

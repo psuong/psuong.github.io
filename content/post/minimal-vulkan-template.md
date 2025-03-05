@@ -3,6 +3,10 @@ title: "Minimal Vulkan Template"
 date: 2025-02-19T08:40:02-05:00
 draft: false
 summary: "Writing my own template for app creation and having fun doing so"
+tags:
+    - rust
+    - vulkan
+    - gui
 ---
 
 Not too long ago, I read Sebastian's blog post, [Programming Without Friction](https://blog.s-schoener.com/2025-02-03-programming-friction/) 

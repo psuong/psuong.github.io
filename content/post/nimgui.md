@@ -3,10 +3,8 @@ title: "NimGui Brief"
 date: 2024-09-10
 draft: false
 pinned: false
-categories:
-  - ui
 tags:
-  - ui
+  - gui
 
 summary: "NimGui, a 1 draw call ImGui for Unity"
 ---

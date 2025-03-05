@@ -3,8 +3,6 @@ title: "InitialPrefabs"
 date: 2021-10-18
 draft: false
 pinned: true
-categories:
-  - work
 tags:
   - work
 
