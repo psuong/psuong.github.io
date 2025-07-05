@@ -9,11 +9,11 @@ tags:
   - music
 ---
 
-Over the past couple of months, I was burned out from life events happening and I could not really 
-do any kind of open source work in the past few months.
+Over the past couple of months, I was burned out from many life events happening out of my control. During that 
+time period, I did not have the capacity to much work on any open source project or my rendering engine. At any kind of mild inconvenience of a challenge, I struggled to keep my motivation up.
 
-But, I needed to do something somewhat _mechanical_ and _creative_ so I picked up how to read music sheets again. 
-I grew up learning how to play woodwind instruments like clarinet/saxophone but dropped it once I hit college. 
+I needed to do something somewhat _mechanical_ and _creative_, so I picked up how to read music sheets again. 
+I grew up learning how to play woodwind instruments like clarinet/saxophone but dropped it once I hit college.
 
 I don't have access to woodwind instruments like before, but DAW (digital audio workstations) do exist so, I looked 
 into software like:
@@ -36,3 +36,7 @@ the software blindly and going through a few weeks of reading the music sheet fo
 finished!
 
 <audio controls src="/audio/cannonball.m4a"></audio>
+
+I am working on my next piece, still from the Megaman Zero series, Trail on a Powdery Snow!
+
+<audio controls src="/audio/trail_on_powdery_snow.m4a"></audio>
