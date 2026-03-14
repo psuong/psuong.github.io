@@ -9,8 +9,8 @@ tags:
 summary: "The consulting work I do at initialPrefabs"
 ---
 
-I founded my own game development consulting company, [initialPrefabs](https://initialprefabs.com) 
-around June of 2016 with my brother. 
+I founded my own game development consulting company with my brother, [initialPrefabs](https://initialprefabs.com) 
+around June of 2016. 
 
 I primarily focus on building custom tools for game developers and optimizations for mobile, 
 desktops, and VR. Some studios I have worked with include:
