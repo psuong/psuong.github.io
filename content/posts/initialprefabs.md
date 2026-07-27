@@ -1,8 +1,7 @@
 ---
 title: "InitialPrefabs"
 date: 2021-10-18
-draft: false
-pinned: true
+draft: true
 tags:
   - work
 

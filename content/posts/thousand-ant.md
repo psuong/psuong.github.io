@@ -1,8 +1,8 @@
 ---
 title: "Thousand Ant Work"
 date: 2021-10-12T19:57:02-04:00
-pinned: true
-draft: false
+pinned: false
+draft: true
 summary: "Things I've worked on at Thousand Ant"
 tags:
   - work
