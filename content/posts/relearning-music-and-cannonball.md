@@ -3,6 +3,7 @@ title: "Relearning Music and Cannonball!"
 date: 2025-06-22T10:28:22-04:00
 author: "Porrith Suong"
 cover: "Test"
+draft: true
 summary: "Relearning how to read music"
 tags:
   - lmms

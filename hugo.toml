@@ -1,31 +1,86 @@
 baseURL = "https://psuong.github.io"
-languageCode = "en"
+languageCode = "en-us"
 title = "Porrith Suong"
-theme = "github-style"
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+theme = ["PaperMod"]
+
+[minify]
+disableXML = true
+# minifyOutput = true
+
+[pagination]
+disableAliases = false
+pagerSize = 3
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[languages.en.taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archives"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Search"
+url = "search/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 2
+
+[outputFormats.llms]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON", "llms"]
 
 [params]
-author = "Porrith Suong"
-description = "Posts are not commits on this site! Made with github-style hugo theme (via MeiK)"
-github = "psuong"
-mastodon = "@psuong"
-bluesky = "itsjustblank.bsky.social"
-linkedin = "PorrithSuong"
-email = "porrith.suong@proton.me"
-url = "https://psuong.github.io"
-keywords = "blog, portfolio"
-rss = true
-lastmod = true
-location = "Brooklyn"
-userStatusEmoji = "😀"
-favicon = "/images/favicon.ico"
-avatar = "/images/avatar.png"
-headerIcon = "/images/github-mark-white.png"
-utterancesRepo = "psuong/psuong.github.io"
+env = "production"
+description = "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+author = "Theme PaperMod"
+defaultTheme = "auto"
+ShowShareButtons = false
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowAllPagesInArchive = true
+ShowPageNums = true
+ShowToc = true
+images = ["images/avatar.png"]
 
-[frontmatter]
-lastmod = ["lastmod", ":fileModTime", ":default"]
+[params.profileMode]
+enabled = false
+title = "PaperMod"
+imageUrl = "#"
+imageTitle = "my image"
+
+[[params.profileMode.buttons]]
+name = "Archives"
+url = "archives"
+
+[[params.profileMode.buttons]]
+name = "Tags"
+url = "tags"
+
+[params.homeInfoParams]
+Title = "My little corner on the internet..."
+Content = """
+Hey, I am a Cambodian American software engineer & game developer who loves tinkering around with graphics, concurrency, and memory. I primarily 
+work with languages such as C, C#, and Rust.
+"""
 
 [markup.goldmark.renderer]
 unsafe = true
