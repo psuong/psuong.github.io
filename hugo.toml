@@ -1,5 +1,5 @@
 baseURL = "https://psuong.github.io"
-languageCode = "en-us"
+locale = "en-us"
 title = "Porrith Suong"
 theme = ["PaperMod"]
 
@@ -12,7 +12,7 @@ disableAliases = false
 pagerSize = 3
 
 [languages.en]
-languageName = "English"
+label = "English"
 weight = 1
 
 [languages.en.taxonomies]
@@ -23,6 +23,11 @@ series = "series"
 [[languages.en.menu.main]]
 name = "Archive"
 url = "archives"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Projects"
+url = "projects"
 weight = 1
 
 [[languages.en.menu.main]]
@@ -59,7 +64,12 @@ ShowRssButtonInSectionTermList = true
 ShowAllPagesInArchive = true
 ShowPageNums = true
 ShowToc = true
-images = ["images/avatar.png"]
+
+[params.assets]
+  favicon = "/images/favicon.ico"
+  favicon16x16 = "/images/favicon-16x16.png"
+  favicon32x32 = "/images/favicon-32x32.png"
+  apple_touch_icon = "/images/apple-touch-icon.png"
 
 [params.profileMode]
 enabled = false
@@ -78,9 +88,41 @@ url = "tags"
 [params.homeInfoParams]
 Title = "My little corner on the internet..."
 Content = """
-Hey, I am a Cambodian American software engineer & game developer who loves tinkering around with graphics, concurrency, and memory. I primarily 
-work with languages such as C, C#, and Rust.
+I am a Cambodian-American software engineer & game developer who loves tinkering around with `graphics`, `concurrency`, and 
+`memory management`. I am particularly interested in performance and optimization where I'm often asking how can I layout my 
+data better for my needs.
+
+The languages I absolutely enjoy working with right now are **C**, **C#**, and **Rust**. I am also pretty interested in 
+_Odin_ because of its design philosophy.
+
+I am working on a job system written in C99 called [TaskGraph](https://initialprefabs.com/tools/c-taskgraph/) as cofounder of 
+[initialPrefabs](https://initialprefabs.com).
 """
+
+[[params.socialIcons]]
+name = "github"
+title = "Github"
+url = "https://github.com/psuong"
+
+[[params.socialIcons]]
+name = "mastodon"
+title = "Mastodon"
+url = "https://mastodon.gamedev.place/@psuong"
+
+[[params.socialIcons]]
+name = "email"
+title = "Email"
+url = "mailto:porrith.suong@proton.me"
+
+[[params.socialIcons]]
+name = "soundcloud"
+title = "Soundcloud"
+url = "https://soundcloud.com/psuong"
+
+[[params.socialIcons]]
+name = "rss"
+title = "RSS"
+url = "/index.xml"
 
 [markup.goldmark.renderer]
 unsafe = true
