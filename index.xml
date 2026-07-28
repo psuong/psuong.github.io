@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Porrith Suong</title>
+    <link>https://psuong.github.io/</link>
+    <description>Recent content on Porrith Suong</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jul 2026 09:20:28 -0400</lastBuildDate>
+    <atom:link href="https://psuong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BinGet v2.x.x</title>
+      <link>https://psuong.github.io/posts/bingetv2/</link>
+      <pubDate>Mon, 27 Jul 2026 09:20:28 -0400</pubDate>
+      <guid>https://psuong.github.io/posts/bingetv2/</guid>
+      <description>Binget received a glowup!</description>
+    </item>
+    <item>
+      <title>Relearning Music and Cannonball!</title>
+      <link>https://psuong.github.io/posts/relearning-music-and-cannonball/</link>
+      <pubDate>Sun, 22 Jun 2025 10:28:22 -0400</pubDate>
+      <guid>https://psuong.github.io/posts/relearning-music-and-cannonball/</guid>
+      <description>Relearning how to read music</description>
+    </item>
+    <item>
+      <title>binget</title>
+      <link>https://psuong.github.io/posts/binget/</link>
+      <pubDate>Wed, 05 Mar 2025 10:52:54 -0500</pubDate>
+      <guid>https://psuong.github.io/posts/binget/</guid>
+      <description>Building a cli to grab releases from Github.</description>
+    </item>
+    <item>
+      <title>Minimal Vulkan Template</title>
+      <link>https://psuong.github.io/posts/minimal-vulkan-template/</link>
+      <pubDate>Wed, 19 Feb 2025 08:40:02 -0500</pubDate>
+      <guid>https://psuong.github.io/posts/minimal-vulkan-template/</guid>
+      <description>Writing my own template for app creation and having fun doing so</description>
+    </item>
+    <item>
+      <title>NimGui Brief</title>
+      <link>https://psuong.github.io/posts/nimgui/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/posts/nimgui/</guid>
+      <description>NimGui, a 1 draw call ImGui for Unity</description>
+    </item>
+    <item>
+      <title>Scaffolding in Development</title>
+      <link>https://psuong.github.io/posts/scaffolding-in-development/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/posts/scaffolding-in-development/</guid>
+      <description>Thoughts on development</description>
+    </item>
+    <item>
+      <title>My Works</title>
+      <link>https://psuong.github.io/works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/works/</guid>
+      <description>&lt;p&gt;Over the last decade, I&amp;rsquo;ve worked on a various number of projects professionally.&lt;/p&gt;
+&lt;h1 id=&#34;senior-unity-engineer--decoy-games&#34;&gt;Senior Unity Engineer @ Decoy Games&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed a non photorealistic shader to render characters in DOTS graphics with procedural rim lighting,
+emission blending, and gradient ramping for in game cinematics.&lt;/li&gt;
+&lt;li&gt;Developed a selective post processing effect to target specific rendering layers with depth testing
+to avoid incorrect depth sorting of post processed layers.&lt;/li&gt;
+&lt;li&gt;Optimized render pipeline by 30% to maintain 6-7 ms render times on a NVIDIA GTX 1080TI by reducing the
+total number of temporary render textures and read/writes to those textures.&lt;/li&gt;
+&lt;li&gt;Developed custom animation timeline with scrubbing controls using Yoga flexbox allowing multiple artists
+to simultaneously edit timelines and reduce complex merge conflicts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;cofounder-of-initialprefabs-llc&#34;&gt;Cofounder of InitialPrefabs, LLC&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Co-founded with my brother in June 2016, where we did consulting work for the following companies.&lt;/li&gt;
+&lt;li&gt;Developed &lt;a href=&#34;https://initialprefabs.gitlab.io/imgui.book/&#34;&gt;NimGui&lt;/a&gt;, a 1 draw call user interface to
+allow developers to draw using an immediate mode API. NimGui processes 20k vertices in 0.38 ms/frame
+on a Ryzen 5 5600.&lt;/li&gt;
+&lt;li&gt;Integrated &lt;a href=&#34;https://github.com/InitialPrefabs/InitialPrefabs.Msdf&#34;&gt;font packing with MSDF&lt;/a&gt; in Rust
+interoping with C# to reduce font atlas disk size by 30% and improve atlas generation times by 2x
+via lockless multithreading to a single image.&lt;/li&gt;
+&lt;li&gt;Developing a &lt;a href=&#34;https://initialprefabs.com/tools/c-taskgraph/&#34;&gt;TaskGraph&lt;/a&gt; in C99 with an API similar
+to Unity’s Job System, work stealing, cyclic dependency prevention, and automated bindings to other
+languages via Cpp.AST.NET.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;phynd&#34;&gt;PHYND&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed C# &amp;amp; C++ SDK to support Unity Game Engine (v2017LTS -&amp;gt; 6.0LTS) and Unreal Engine
+(v4.6 -&amp;gt; v6.1) enabling low latency in-game video/audio cloud streaming on a Ryzen 5 5600
+(2.5ms time frame).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-feast&#34;&gt;The Feast&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed a custom deferred non physically based render (NPBR) pipeline in URP allowing
+better scalability when authoring many spot lights.&lt;/li&gt;
+&lt;li&gt;Developed custom Amplify shader templates to&lt;/li&gt;
+&lt;li&gt;Developed a procedural spot light system using indirect rendering to visualize enemy detection range.&lt;/li&gt;
+&lt;li&gt;Developed a runtime CPU culling system using spatial maps for interior levels allowing unnecessary
+objects to be culled reducing frametime from 8ms to 5ms on a NVIDIA GTX 1080.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cell-to-singularity&#34;&gt;Cell To Singularity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed a backward compatible save game schema to replace the existing save game schema allowing
+players to have multiple saves and to rollback their existing save to an earlier version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;esc-game-theater-defunct&#34;&gt;ESC Game Theater (Defunct)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed a customize rendering system to allow ESC Game Theater to render thousands and millions
+of sprites via WebGL on stadium jumbotrons&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;metamorphosis-games&#34;&gt;Metamorphosis Games&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed an hierarchical finite state machine (HFSM) to allow the game designers to author more
+complex behaviours using a node like system.&lt;/li&gt;
+&lt;li&gt;Glued behaviour states to override the animation&amp;rsquo;s state machine allowing animations to blend
+consistently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;vrwiz-defunct&#34;&gt;VrWiz (Defunct)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed a pipeline to trim Unity&amp;rsquo;s terrain system and bake it as a custom mesh to draw
+with indirect rendering&lt;/li&gt;
+&lt;li&gt;Developed a procedural tree system allowing the player to design their own tree and use that tree
+to draw indirectly through out the entire world.&lt;/li&gt;
+&lt;li&gt;Developed custom Blinn-Phong shaders using LUTs and reduced render texture allocations on runtime
+to optimize the frame time to run at 72 FPS on the Oculus Quest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;kungfu-kickball&#34;&gt;KungFu Kickball&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Trained machine learned agents to play KungFu Kickball in order to fill a lobby with feasible and
+believable bots instead of using behaviour trees to design the behaviors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mokuni-games&#34;&gt;Mokuni Games&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed procedural level generation reducing the amount of time spent designing reasonable levels
+for Kitty in the Box 2.&lt;/li&gt;
+&lt;li&gt;Developed a force and penetration detection system for Kitty in the Box VR on the HTC Vive. This
+prevents the virtual hands from clipping directly into the the main character&amp;rsquo;s body.&lt;/li&gt;
+&lt;li&gt;Developed an efficient navigation sampling system to allow NPCs to quickly navigate between
+platforms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;metis-suns&#34;&gt;Metis Suns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed a visualization system to display the state of BoB&amp;rsquo;s individual thought nodes.&lt;/li&gt;
+&lt;li&gt;Developed a dampening system to normalize force to ensure that BoB&amp;rsquo;s individual nodes do not
+violently react under extreme pressure.
+&lt;ul&gt;
+&lt;li&gt;Developed a pipeline to store control attendee inputs to help normalize the forces from attendees.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Developed a neural network based utility theory system allowing NPCs to constantly evaluate needs
+with multi agent coordination/support for Emissary in the Squat of Gods.&lt;/li&gt;
+&lt;li&gt;Developed an node based graph editor allowing designers to develop agent sensors and behaviours
+with minimal inputs from the developers for Emissary in the Squat of Gods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;software-engineer--technical-writer--thousand-ant&#34;&gt;Software Engineer &amp;amp; Technical Writer @ Thousand Ant&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;At Thousand Ant, I was a technical writer and software engineer helping other companies build
+technical demos and writing easy to digest technical documentations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;kart&#34;&gt;Kart Microgame&lt;/h2&gt;
+&lt;p&gt;My team and I were responsible for updating Unity&amp;rsquo;s Kart Microgame to match more modern arcades. Some
+features I contributed to the project include:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://psuong.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://psuong.github.io/projects/</guid>
+      <description>projects</description>
+    </item>
+  </channel>
+</rss>

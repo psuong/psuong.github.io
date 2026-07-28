@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C# on Porrith Suong</title>
+    <link>https://psuong.github.io/tags/c%23/</link>
+    <description>Recent content in C# on Porrith Suong</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jul 2026 09:20:28 -0400</lastBuildDate>
+    <atom:link href="https://psuong.github.io/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BinGet v2.x.x</title>
+      <link>https://psuong.github.io/posts/bingetv2/</link>
+      <pubDate>Mon, 27 Jul 2026 09:20:28 -0400</pubDate>
+      <guid>https://psuong.github.io/posts/bingetv2/</guid>
+      <description>Binget received a glowup!</description>
+    </item>
+    <item>
+      <title>binget</title>
+      <link>https://psuong.github.io/posts/binget/</link>
+      <pubDate>Wed, 05 Mar 2025 10:52:54 -0500</pubDate>
+      <guid>https://psuong.github.io/posts/binget/</guid>
+      <description>Building a cli to grab releases from Github.</description>
+    </item>
+  </channel>
+</rss>
