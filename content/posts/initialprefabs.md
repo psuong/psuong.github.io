@@ -4,7 +4,6 @@ date: 2021-10-18
 draft: true
 tags:
   - work
-
 summary: "The consulting work I do at initialPrefabs"
 ---
 

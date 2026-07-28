@@ -5,7 +5,17 @@ layout: single
 
 Over the last decade, I've worked on a various number of projects professionally.
 
-# InitialPrefabs, LLC
+# Senior Unity Engineer @ Decoy Games
+- Developed a non photorealistic shader to render characters in DOTS graphics with procedural rim lighting,
+emission blending, and gradient ramping for in game cinematics.
+- Developed a selective post processing effect to target specific rendering layers with depth testing 
+to avoid incorrect depth sorting of post processed layers.
+- Optimized render pipeline by 30% to maintain 6-7 ms render times on a NVIDIA GTX 1080TI by reducing the 
+total number of temporary render textures and read/writes to those textures.
+- Developed custom animation timeline with scrubbing controls using Yoga flexbox allowing multiple artists 
+to simultaneously edit timelines and reduce complex merge conflicts.
+
+# Cofounder of InitialPrefabs, LLC
 - Co-founded with my brother in June 2016, where we did consulting work for the following companies.
 - Developed [NimGui](https://initialprefabs.gitlab.io/imgui.book/), a 1 draw call user interface to
 allow developers to draw using an immediate mode API. NimGui processes 20k vertices in 0.38 ms/frame 
@@ -74,7 +84,7 @@ with multi agent coordination/support for Emissary in the Squat of Gods.
 - Developed an node based graph editor allowing designers to develop agent sensors and behaviours 
 with minimal inputs from the developers for Emissary in the Squat of Gods.
 
-# Thousand Ant
+# Software Engineer & Technical Writer @ Thousand Ant
 - At Thousand Ant, I was a technical writer and software engineer helping other companies build 
 technical demos and writing easy to digest technical documentations.
 

@@ -1,6 +1,7 @@
 ---
 title: "README"
 date: 2021-10-18
+draft: true
 ---
 
 I'm a game developer highly interested in 

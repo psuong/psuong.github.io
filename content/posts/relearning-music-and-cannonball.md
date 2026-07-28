@@ -2,14 +2,13 @@
 title: "Relearning Music and Cannonball!"
 date: 2025-06-22T10:28:22-04:00
 author: "Porrith Suong"
-cover: "Test"
-draft: true
+draft: false
 summary: "Relearning how to read music"
 tags:
-  - lmms
   - music
 ---
 
+# Premise
 Over the past couple of months, I was burned out from many life events happening out of my control. During that 
 time period, I did not have the capacity to much work on any open source project or my rendering engine. At any kind of mild inconvenience of a challenge, I struggled to keep my motivation up.
 
@@ -41,3 +40,6 @@ finished!
 I am working on my next piece, still from the Megaman Zero series, Trail on a Powdery Snow!
 
 <audio controls src="/audio/trail_on_powdery_snow.m4a"></audio>
+
+# Some small updates
+I am hosting some of the music I am writing on [Soundcloud](https://soundcloud.com/psuong) now!
