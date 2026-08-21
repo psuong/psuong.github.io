@@ -3,6 +3,7 @@
 - [Projects](https://psuong.github.io/projects/)
 
 ## Posts
+- [Writing a BindGenerator](https://psuong.github.io/posts/bindgen/)
 - [BinGet v2.x.x](https://psuong.github.io/posts/bingetv2/)
 - [Relearning Music and Cannonball!](https://psuong.github.io/posts/relearning-music-and-cannonball/)
 - [binget](https://psuong.github.io/posts/binget/)

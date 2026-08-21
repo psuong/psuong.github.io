@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://psuong.github.io/tags/c/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/tags/c%23/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/tags/interop/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/posts/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/tags/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
+    <loc>https://psuong.github.io/posts/bindgen/</loc>
+    <lastmod>2026-08-20T22:49:56-04:00</lastmod>
+  </url><url>
     <loc>https://psuong.github.io/posts/bingetv2/</loc>
     <lastmod>2026-07-27T09:20:28-04:00</lastmod>
   </url><url>
-    <loc>https://psuong.github.io/tags/c%23/</loc>
-    <lastmod>2026-07-27T09:20:28-04:00</lastmod>
-  </url><url>
     <loc>https://psuong.github.io/tags/cli/</loc>
-    <lastmod>2026-07-27T09:20:28-04:00</lastmod>
-  </url><url>
-    <loc>https://psuong.github.io/</loc>
-    <lastmod>2026-07-27T09:20:28-04:00</lastmod>
-  </url><url>
-    <loc>https://psuong.github.io/posts/</loc>
-    <lastmod>2026-07-27T09:20:28-04:00</lastmod>
-  </url><url>
-    <loc>https://psuong.github.io/tags/</loc>
     <lastmod>2026-07-27T09:20:28-04:00</lastmod>
   </url><url>
     <loc>https://psuong.github.io/tags/music/</loc>

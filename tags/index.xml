@@ -6,13 +6,27 @@
     <description>Recent content in Tags on Porrith Suong</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2026 09:20:28 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 22:49:56 -0400</lastBuildDate>
     <atom:link href="https://psuong.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C</title>
+      <link>https://psuong.github.io/tags/c/</link>
+      <pubDate>Thu, 20 Aug 2026 22:49:56 -0400</pubDate>
+      <guid>https://psuong.github.io/tags/c/</guid>
+      <description></description>
+    </item>
     <item>
       <title>C#</title>
       <link>https://psuong.github.io/tags/c%23/</link>
-      <pubDate>Mon, 27 Jul 2026 09:20:28 -0400</pubDate>
+      <pubDate>Thu, 20 Aug 2026 22:49:56 -0400</pubDate>
       <guid>https://psuong.github.io/tags/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interop</title>
+      <link>https://psuong.github.io/tags/interop/</link>
+      <pubDate>Thu, 20 Aug 2026 22:49:56 -0400</pubDate>
+      <guid>https://psuong.github.io/tags/interop/</guid>
       <description></description>
     </item>
     <item>
