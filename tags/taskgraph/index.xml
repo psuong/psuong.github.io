@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Interop on Porrith Suong</title>
-    <link>https://psuong.github.io/tags/interop/</link>
-    <description>Recent content in Interop on Porrith Suong</description>
+    <title>Taskgraph on Porrith Suong</title>
+    <link>https://psuong.github.io/tags/taskgraph/</link>
+    <description>Recent content in Taskgraph on Porrith Suong</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Sep 2026 23:01:09 -0400</lastBuildDate>
-    <atom:link href="https://psuong.github.io/tags/interop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://psuong.github.io/tags/taskgraph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taskgraph and SIMD</title>
       <link>https://psuong.github.io/posts/taskgraph-and-simd/</link>
       <pubDate>Sat, 12 Sep 2026 23:01:09 -0400</pubDate>
       <guid>https://psuong.github.io/posts/taskgraph-and-simd/</guid>
       <description>Writing a demo for TaskGraph in C#</description>
-    </item>
-    <item>
-      <title>Writing a BindGenerator</title>
-      <link>https://psuong.github.io/posts/bindgen/</link>
-      <pubDate>Thu, 20 Aug 2026 22:49:56 -0400</pubDate>
-      <guid>https://psuong.github.io/posts/bindgen/</guid>
-      <description>Creating a binding generator in C#</description>
     </item>
   </channel>
 </rss>

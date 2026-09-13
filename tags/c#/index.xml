@@ -6,8 +6,15 @@
     <description>Recent content in C# on Porrith Suong</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2026 22:49:56 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 23:01:09 -0400</lastBuildDate>
     <atom:link href="https://psuong.github.io/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taskgraph and SIMD</title>
+      <link>https://psuong.github.io/posts/taskgraph-and-simd/</link>
+      <pubDate>Sat, 12 Sep 2026 23:01:09 -0400</pubDate>
+      <guid>https://psuong.github.io/posts/taskgraph-and-simd/</guid>
+      <description>Writing a demo for TaskGraph in C#</description>
+    </item>
     <item>
       <title>Writing a BindGenerator</title>
       <link>https://psuong.github.io/posts/bindgen/</link>
