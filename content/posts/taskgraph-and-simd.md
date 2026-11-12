@@ -106,9 +106,9 @@ The initial implementation of the CPU ray tracer is _entirely_ naive. For each p
 and then check against 500 spheres to see if the ray hits. To improve the scalar code, I introduced a bounding 
 volume hierarchy (BVH tree).
 
-None of the spheres will every move, so I only need to build the tree once. A BVH tree is a bounding volume 
-hierarchy, where the scene is effectively divded into multiple areas of axis aligned bounding boxes (AABB). 
-This means instead of only doing a ray - sphere intersection, I do a ray - box intersection using the [slab 
+None of the spheres will ever move, so I only need to build the tree once. A BVH tree is a bounding volume 
+hierarchy, where the scene is effectively divided into multiple areas of axis aligned bounding boxes (AABB). 
+Instead of only doing a ray - sphere intersection, I do a ray - box intersection using the [slab 
 method](https://en.wikipedia.org/wiki/Slab_method). This cuts down the search space and only iterate on the 
 spheres that are within the AABB.
 
@@ -130,7 +130,8 @@ For example, if I try to load a series of `Vector3`s, that is 12 bytes loaded an
 register that is 32 bytes wide, I can only load **2** `Vector3`s or 24 bytes. We have 8 bytes remaining that 
 only represents two 4 byte words.
 
-Take a look at the example below, the last 2 lanes in the register cannot load another Vector3, effectively leaving only the x & y components to load.
+Take a look at the example below, the last 2 lanes in the register cannot load another Vector3, effectively 
+leaving only the x & y components to load.
 
 ```
 |----------------Register---------------|
